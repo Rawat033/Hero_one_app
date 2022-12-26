@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Android emulator gets opened]]>
+    </line>
+  </reporter-output>
+  <suite name="Main_MethodsSuite" duration-ms="37227" started-at="2022-12-26T15:59:17 IST" finished-at="2022-12-26T15:59:55 IST">
+    <groups>
+    </groups>
+    <test name="Main_MethodsTest" duration-ms="37227" started-at="2022-12-26T15:59:17 IST" finished-at="2022-12-26T15:59:55 IST">
+      <class name="com.oneapp.test_suits.Main_Methods">
+        <test-method status="PASS" signature="Browsers_open(java.lang.String)[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="Browsers_open" is-config="true" duration-ms="20801" started-at="2022-12-26T15:59:18 IST" finished-at="2022-12-26T15:59:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Android emulator gets opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browsers_open -->
+        <test-method status="PASS" signature="InValid_Login_002()[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="InValid_Login_002" duration-ms="16349" started-at="2022-12-26T15:59:38 IST" finished-at="2022-12-26T15:59:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValid_Login_002 -->
+        <test-method status="PASS" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="Browsers_teardown" is-config="true" duration-ms="1" started-at="2022-12-26T15:59:55 IST" finished-at="2022-12-26T15:59:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browsers_teardown -->
+      </class> <!-- com.oneapp.test_suits.Main_Methods -->
+    </test> <!-- Main_MethodsTest -->
+  </suite> <!-- Main_MethodsSuite -->
+</testng-results>

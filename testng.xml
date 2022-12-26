@@ -1,0 +1,14 @@
+<suite name="Main_MethodsSuite">
+  <test thread-count="5" name="Main_MethodsTest">
+  <parameter name="Platform" value="Android"/>  
+    <classes>
+      <class name="com.oneapp.test_suits.Main_Methods">
+       <methods>
+        <include name="InValid_Login_002"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Main_MethodsTest -->
+</suite> <!-- Main_MethodsSuite -->
+
+
