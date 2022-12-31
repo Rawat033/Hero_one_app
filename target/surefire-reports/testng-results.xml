@@ -5,12 +5,12 @@
       <![CDATA[Android emulator gets opened]]>
     </line>
   </reporter-output>
-  <suite name="Main_MethodsSuite" duration-ms="37227" started-at="2022-12-26T15:59:17 IST" finished-at="2022-12-26T15:59:55 IST">
+  <suite name="Main_MethodsSuite" duration-ms="44066" started-at="2022-12-26T17:29:08 IST" finished-at="2022-12-26T17:29:52 IST">
     <groups>
     </groups>
-    <test name="Main_MethodsTest" duration-ms="37227" started-at="2022-12-26T15:59:17 IST" finished-at="2022-12-26T15:59:55 IST">
+    <test name="Main_MethodsTest" duration-ms="44066" started-at="2022-12-26T17:29:08 IST" finished-at="2022-12-26T17:29:52 IST">
       <class name="com.oneapp.test_suits.Main_Methods">
-        <test-method status="PASS" signature="Browsers_open(java.lang.String)[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="Browsers_open" is-config="true" duration-ms="20801" started-at="2022-12-26T15:59:18 IST" finished-at="2022-12-26T15:59:38 IST">
+        <test-method status="PASS" signature="Browsers_open(java.lang.String)[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="Browsers_open" is-config="true" duration-ms="28759" started-at="2022-12-26T17:29:08 IST" finished-at="2022-12-26T17:29:37 IST">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Browsers_open -->
-        <test-method status="PASS" signature="InValid_Login_002()[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="InValid_Login_002" duration-ms="16349" started-at="2022-12-26T15:59:38 IST" finished-at="2022-12-26T15:59:55 IST">
+        <test-method status="PASS" signature="InValid_Login_002()[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="InValid_Login_002" duration-ms="15231" started-at="2022-12-26T17:29:37 IST" finished-at="2022-12-26T17:29:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValid_Login_002 -->
-        <test-method status="PASS" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="Browsers_teardown" is-config="true" duration-ms="1" started-at="2022-12-26T15:59:55 IST" finished-at="2022-12-26T15:59:55 IST">
+        <test-method status="PASS" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@1563da5]" name="Browsers_teardown" is-config="true" duration-ms="0" started-at="2022-12-26T17:29:52 IST" finished-at="2022-12-26T17:29:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browsers_teardown -->

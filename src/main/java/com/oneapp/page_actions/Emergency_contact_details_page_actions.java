@@ -22,9 +22,9 @@ public class Emergency_contact_details_page_actions {
 		ecdpo.getFullname_textbox().sendKeys("Me");
 		ecdpo.getMob_number_txtbox().sendKeys("8130998133");
 		ecdpo.getRelation_type().click();
+		
 		List<WebElement> options = ecdpo.getRelation_typedropdown();
-		System.out.println(options.size());
-
+		
 		for (WebElement element : options) {
 			String val = element.getText();
 			if (val.equalsIgnoreCase("friend")) {
@@ -32,6 +32,22 @@ public class Emergency_contact_details_page_actions {
 				break;
 			}
 		}
+
+		
+//		for loop
+//		
+//		 int options = ecdpo.getRelation_typedropdown().size();
+//		 for (int i=0;i<options;i++)
+//		 {
+//			 String text = ecdpo.getRelation_typedropdown().get(i).getText();
+//			 if (text.equalsIgnoreCase("friend"))
+//			 {
+//				 ecdpo.getRelation_typedropdown().get(i).click();
+//				 break;
+//			 }
+//			 
+//		 }
+	
 
 		Thread.sleep(3000);
 		

@@ -14,10 +14,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
 import com.google.common.io.Files;
 import com.oneapp.basic.Create_Driver_Session;
+import com.oneapp.basic.ExcelData;
 import com.oneapp.pageobjects.Contact_Us_page_object;
 import com.oneapp.pageobjects.Login_Page_Object;
 import com.oneapp.pageobjects.Privacy_Policy_Page_Object;
@@ -36,8 +38,8 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class Login_Page_Action {
 
-	public AndroidDriver ad;
-	
+	public  AndroidDriver ad;
+	public ExcelData exceldata;
 
 	public Login_Page_Object lpo;
 	public TouchAction ta;
@@ -45,8 +47,8 @@ public class Login_Page_Action {
 	public Terms_and_condition_Page_Object tcpo;
 	public Contact_Us_page_object cupo;
 
-	String mob_num = "8800996793";
-	String mob_num1 = "995859217";
+//	String mob_num = "8800996793";
+//	String mob_num1 = "995859217";
 	
 	public void WifiOff() {
 	    ConnectionState state = ad.setConnection(new ConnectionStateBuilder().withWiFiDisabled().build());
@@ -72,8 +74,24 @@ public class Login_Page_Action {
 		pppo =new Privacy_Policy_Page_Object(ad);
 		 tcpo = new Terms_and_condition_Page_Object(ad);
 		cupo=new Contact_Us_page_object(ad);
+		 exceldata= new ExcelData();	 
 	}
 
+	
+//	@DataProvider(name="LoginTestData")
+//	public Object[][] Login_Data_provider()
+//	{
+//		Object[][] data = new Object[2][2];
+//		data[0][0]= "9958592171";
+//		data[1][0]= "0002272829";
+//		data[2][0]= "972827";
+//		data[3][0]= "99hajckdiw";
+//		data[4][0]= "999&ueisj0";
+//		
+//		return data;
+//		
+//	}
+	
 	public void validate_login() throws InterruptedException {
 //		ad.isAppInstalled("com.customerapp.hero");   //for checking app is installed or not?
 //		ad.lockDevice();
@@ -86,8 +104,11 @@ public class Login_Page_Action {
 		Assert.assertEquals(actuallogo, Expectedlogo);
 		System.out.println("My Validation has passed");
 		System.out.println(lpo.getHerologo().getText());
-		lpo.getMobile_num_field().sendKeys(mob_num);
-		lpo.getlogin_btn().click();
+		lpo.getMobile_num_field().sendKeys(exceldata.getStringData("Login", 0, 0));
+	//	lpo.getlogin_btn().click();
+		ad.findElementByXPath("//*[@text='login']").click();
+		Thread.sleep(5000);
+		
 	}
 
 	public void Invalidate_login() throws InterruptedException {
@@ -98,31 +119,33 @@ public class Login_Page_Action {
 		Assert.assertEquals(hlogo.getText(), Expectedlogo);
 
 		StringBuilder sb = new StringBuilder();
-		StringBuilder rev = sb.append(mob_num);
+		StringBuilder rev = sb.append(exceldata.getStringData("Login",0,0));
 		StringBuilder reverse = rev.reverse();
 	    
 		lpo.getMobile_num_field().sendKeys(reverse);
 		Thread.sleep(10000);
-		ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
+	//	ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
+		lpo.getlogin_btn().click();
 	}
 
 	public void Mininum_length_field() throws InterruptedException {
 
 		WebElement Enter_mob_num = lpo.getMobile_num_field();
 		
-		Enter_mob_num.sendKeys(mob_num1);
+		Enter_mob_num.sendKeys(exceldata.getStringData("Login",2,0));
 
-		if (mob_num.contains("9958")) {
+		if (exceldata.getStringData("Login",2,0).contains("9958")) {
 			Thread.sleep(3000);
 			boolean enabl_btn = lpo.getlogin_btn().isEnabled();
-			System.out.println(enabl_btn);
+			System.out.println("Button is disabled "+ enabl_btn);
 
 		}
 
 		else {
 			System.out.println("button is still enable and my test is getting failed");
 			Thread.sleep(2000);
-			ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
+	//		ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
+			lpo.getlogin_btn().click();
 		}
 
 //    Thread.sleep(2000);
@@ -130,12 +153,6 @@ public class Login_Page_Action {
 
 	}
 
-	public void Screenshot() throws IOException {
-		File screenshotFile = ((TakesScreenshot) ad).getScreenshotAs(OutputType.FILE);
-		String DestFile = "./screenshots/screenshot.png";
-		Files.copy(screenshotFile, new File(DestFile));
-	}
-	
 	public void Swipe_Login_page() throws InterruptedException
 	{
 		ta = new TouchAction(ad);

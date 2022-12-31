@@ -29,7 +29,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 //@Listeners(com.oneapp.basic.MyListeners.class)  
 
-public class  Main_Methods extends BrowserFactory {
+public class  Main_Methods extends BrowserFactory{
 	
 	@Test 
 	public void Valid_Login_001() throws InterruptedException, IOException

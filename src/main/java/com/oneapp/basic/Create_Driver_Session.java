@@ -7,6 +7,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Parameters;
 
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -14,16 +15,17 @@ public class Create_Driver_Session {
 
 	public static DesiredCapabilities dcap;
 
-	public static AndroidDriver Androidsession(String Platform_name) throws MalformedURLException {
+
+	public static AndroidDriver Androidsession(String PLATFORM_NAME, String DEVICE_NAME, String AUTOMATION_NAME, String UDID) throws MalformedURLException {
 		AndroidDriver ad= null;
 		
 		dcap = new DesiredCapabilities();
 
 	//    For Android Emulator
-		dcap.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform_name);
-		dcap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3");
-		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-		dcap.setCapability(MobileCapabilityType.UDID, "emulator-5554");
+		dcap.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM_NAME);
+		dcap.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
+		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AUTOMATION_NAME);
+		dcap.setCapability(MobileCapabilityType.UDID, UDID);
 		dcap.setCapability("avd", "Pixel_3");
 		dcap.setCapability("avdLaunchTimeout", 400000);
 		dcap.setCapability("readyTimeout", 400000);
