@@ -106,7 +106,7 @@ public class Login_Page_Action {
 		System.out.println(lpo.getHerologo().getText());
 		lpo.getMobile_num_field().sendKeys(exceldata.getStringData("Login", 0, 0));
 	//	lpo.getlogin_btn().click();
-		ad.findElementByXPath("//*[@text='login']").click();
+		ad.findElementByXPath("//*[@text='Continue']").click();
 		Thread.sleep(5000);
 		
 	}
