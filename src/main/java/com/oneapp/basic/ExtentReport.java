@@ -48,6 +48,7 @@ public class ExtentReport {
     }
 	
     
+    
     public static String CaptureScreenshot() throws IOException
     {
    	TakesScreenshot ts = (TakesScreenshot)BrowserFactory.ad;

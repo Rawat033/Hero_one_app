@@ -4,6 +4,7 @@
   <parameter name="DEVICE_NAME" value="Pixel 3"/>  
   <parameter name="AUTOMATION_NAME" value="UiAutomator2"/> 
    <parameter name="UDID" value="emulator-5554"/> 
+   
     <classes>
       <class name="com.oneapp.test_suits.Main_Methods">
        <methods>
