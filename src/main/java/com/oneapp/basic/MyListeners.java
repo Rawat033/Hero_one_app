@@ -38,7 +38,6 @@ public class MyListeners implements ITestListener {
 //				.fail((Markup) MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 //			} 
 //			catch (IOException e) 
-			
 //			{
 //				System.out.println("Unable to take log test " + e.getMessage());
 //			}

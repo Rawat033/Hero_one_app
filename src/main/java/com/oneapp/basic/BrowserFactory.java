@@ -30,7 +30,6 @@ import io.appium.java_client.android.AndroidDriver;
 public class BrowserFactory {
 
 	public static AndroidDriver ad;// Global AndroidDriver
-	
 
 //	@Parameters("Platform")
 	@Parameters({ "PLATFORM_NAME", "DEVICE_NAME", "AUTOMATION_NAME", "UDID" })
