@@ -35,8 +35,11 @@ public class Dashboard_Page_object {
 	@FindBy(id="com.customerapp.hero:id/side_menu_btn")
 	private WebElement menu_bar_icon;
 	
-	@FindBy(xpath="//android.widget.FrameLayout[@content-desc=\"Services\"]/android.widget.FrameLayout/android.widget.ImageView")
+	@FindBy(xpath="//*[@text='Services']")
 	private WebElement services_icon;
+	
+	@FindBy(xpath="//*[@text='GoodLife']")
+	private WebElement goodlife_icon;
 	
 	
 	
@@ -98,6 +101,11 @@ public class Dashboard_Page_object {
 		return services_icon;
 	}
 
+
+
+	public WebElement getGoodlife_icon() {
+		return goodlife_icon;
+	}
 
 	
 	

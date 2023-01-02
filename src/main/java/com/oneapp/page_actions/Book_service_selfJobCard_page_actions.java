@@ -49,8 +49,12 @@ public class Book_service_selfJobCard_page_actions {
 		else {
 			System.out.println("Service text is not avaiable on the page");
 		}
+		
+		bssjcpo.getKey_issues_text().click();
 
 		bssjcpo.getOther_issues_textbox().sendKeys("Testing");
+		
+		Reporter.log(bssjcpo.getBook_service_btn().getText(), true);
 
 	}
 

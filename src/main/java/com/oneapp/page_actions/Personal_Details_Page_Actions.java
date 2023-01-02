@@ -65,7 +65,7 @@ public class Personal_Details_Page_Actions {
 
 		WebElement email = pdpo.getEmailfield();
 		email.clear();
-		email.sendKeys("gunjan@gmail.com");
+		email.sendKeys("gunjan12345@gmail.com");
 
 		System.out.println("*************************************");
 		Thread.sleep(4000);
@@ -91,6 +91,12 @@ public class Personal_Details_Page_Actions {
 				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).release().perform();
 		System.out.println("Swiped succesfully");
 		Thread.sleep(2000);
+		WebElement date = pdpo.getDatefield();
+		date.click();
+		pdpo.getEdit_under_date_field().click();
+		pdpo.getEditing_date().sendKeys("1/2/02");
+		pdpo.getOk_text().click();
+		Thread.sleep(3000);
 		WebElement address = pdpo.getAddress_field();
 		address.clear();
 		address.sendKeys("f30, mumbai, bandra east");

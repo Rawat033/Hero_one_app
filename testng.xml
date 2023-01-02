@@ -1,17 +1,15 @@
 <suite name="Main_MethodsSuite">
-  <test thread-count="5" name="Main_MethodsTest">
-  <parameter name="PLATFORM_NAME" value="Android"/> 
-  <parameter name="DEVICE_NAME" value="Pixel 3"/>  
-  <parameter name="AUTOMATION_NAME" value="UiAutomator2"/> 
-   <parameter name="UDID" value="emulator-5554"/> 
-    <classes>
-      <class name="com.oneapp.test_suits.Main_Methods">
-       <methods>
-        <include name="Valid_Login_001"/>
-      </methods>
+	<test name="Main_MethodsTest">
+	
+	 <groups>
+        <run>
+            <include name="smoke" />
+        </run>
+    </groups>
+    
+		<classes>
+			<class name="com.oneapp.test_suits.Main_Methods">
       </class>
-    </classes>
-  </test> <!-- Main_MethodsTest -->
+		</classes>
+	</test> <!-- Main_MethodsTest -->
 </suite> <!-- Main_MethodsSuite -->
-
-

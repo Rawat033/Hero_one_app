@@ -26,7 +26,7 @@ public class OTP_Page_Object {
 	@FindBy(id="com.customerapp.hero:id/otp_6_edtxt")
 	private WebElement sixthtxtbox;
 	
-	@FindBy(id="com.customerapp.hero:id/btn_lbl")
+	@FindBy(id="com.customerapp.hero:id/btn_lay")
 	private WebElement verifybtn;
 	
 	public OTP_Page_Object(AndroidDriver ad)

@@ -31,14 +31,14 @@ public class Personal_Details_Page_Object {
 //	@FindBy(xpath ="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.FrameLayout/android.widget.EditText")
 //	private WebElement datefield;
 
-	@FindBy(id = "com.customerapp.hero:id/text_input_editext")
+	@FindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.FrameLayout/android.widget.EditText")
 	private WebElement datefield;
 
 	@FindBy(id = "com.customerapp.hero:id/mtrl_picker_header_toggle")
 	private WebElement edit_under_date_field;
 
-	@FindBys({ @FindBy(className = "android.widget.EditText") })
-	private List<WebElement> editing_date;
+	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText")
+	private WebElement editing_date;
 
 	@FindBy(id = "com.customerapp.hero:id/confirm_button")
 	private WebElement ok_text;
@@ -89,7 +89,7 @@ public class Personal_Details_Page_Object {
 		return edit_under_date_field;
 	}
 
-	public List<WebElement> getEditing_date() {
+	public WebElement getEditing_date() {
 		return editing_date;
 	}
 

@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelData {
 	
-	XSSFWorkbook wb;
+public 	XSSFWorkbook wb;
 	
 	public ExcelData() {
 		

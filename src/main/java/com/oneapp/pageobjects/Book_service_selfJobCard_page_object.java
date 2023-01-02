@@ -25,6 +25,11 @@ public class Book_service_selfJobCard_page_object {
 	@FindBy(id="com.customerapp.hero:id/otherIssuesEdt")
 	private WebElement other_issues_textbox;
 	
+	
+	@FindBy(id="com.customerapp.hero:id/btn_lay")
+	private WebElement book_service_btn;
+	
+	
 	public Book_service_selfJobCard_page_object(AndroidDriver ad)
 	{
 		
@@ -50,6 +55,10 @@ public class Book_service_selfJobCard_page_object {
 
 	public WebElement getOther_issues_textbox() {
 		return other_issues_textbox;
+	}
+
+	public WebElement getBook_service_btn() {
+		return book_service_btn;
 	}
 
 	

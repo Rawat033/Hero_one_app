@@ -15,6 +15,8 @@ import com.oneapp.page_actions.Book_service_service_center_page_actions;
 import com.oneapp.page_actions.Dashboard_Page_Actions;
 import com.oneapp.page_actions.Emergency_contact_details_page_actions;
 import com.oneapp.page_actions.Emergency_contact_page_actions;
+import com.oneapp.page_actions.Goodlife_Dashboard_Non_mem_Page_Actions;
+import com.oneapp.page_actions.Goodlife_Plans_Page_Actions;
 import com.oneapp.page_actions.Login_Page_Action;
 import com.oneapp.page_actions.Menu_Bar_Page_Actions;
 import com.oneapp.page_actions.Myprofile_Page_Actions;
@@ -31,7 +33,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class  Main_Methods extends BrowserFactory{
 	
-	@Test 
+	@Test (groups = { "smoke" })
 	public void Valid_Login_001() throws InterruptedException, IOException
 	{
 		System.out.println(ad.getSessionId());
@@ -40,7 +42,6 @@ public class  Main_Methods extends BrowserFactory{
 //		lpa.Screenshot();
 //		System.out.println("Screenshot has taken");
 //		Thread.sleep(10000);
-//		
 	}
 	
 	
@@ -86,7 +87,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
 	
-	@Test 
+	@Test (groups = { "smoke" })
 	public void Verify_OTP_100() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -97,7 +98,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
 	
-	@Test 
+	@Test (groups = { "smoke" })
 	public void Vehicle_selected_succesfully_200() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -110,7 +111,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
  
-	@Test 
+	@Test (groups = { "smoke" })
 	public void Dashboard_All_Popups_300() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -124,7 +125,7 @@ public class  Main_Methods extends BrowserFactory{
 		dpa.Handling_Dashboard_All_Popups();
 	}
 	
-	@Test 
+	@Test (groups = { "smoke" })
 	public void Myprofile_changes_Validation_400() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -146,7 +147,7 @@ public class  Main_Methods extends BrowserFactory{
 		mppa.profile_details_after_saving_validation();
 	}
 	
-      @Test 
+      @Test (enabled=false)
       public void Emergency_contact_added_succesfully() throws InterruptedException
       {
     		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -236,11 +237,29 @@ public class  Main_Methods extends BrowserFactory{
  		bssjcpa.Self_Job_Card_Page();
 	 }
 	 
-	
+	 
+	 @Test 
+	 public void Goodlife_Nonmember_Owner() throws InterruptedException
+	 {
+		Login_Page_Action lpa= new Login_Page_Action(ad);
+ 		lpa.validate_login();
+ 		System.out.println("OTP page");
+ 		OTP_Page_Actions opa= new OTP_Page_Actions(ad);
+ 		opa.Validate_OTP();		
+ 		Selected_Vehicle_Page_Actions svpa= new Selected_Vehicle_Page_Actions(ad);
+ 		svpa.Vehicle_Select();
+ 		Dashboard_Page_Actions dpa=new Dashboard_Page_Actions(ad);
+ 		dpa.Handling_Dashboard_All_Popups();
+ 		dpa.Goodlife_icon();
+ 		Goodlife_Dashboard_Non_mem_Page_Actions gdnmpa=new Goodlife_Dashboard_Non_mem_Page_Actions(ad);
+ 		gdnmpa.Goodlife_dashboard_button();
+ 		Goodlife_Plans_Page_Actions gppa= new Goodlife_Plans_Page_Actions(ad);
+ 		gppa.click_on_view_all_benefits();
+ 		
 }
 	
 		
-		
+}
 	
 	
 	

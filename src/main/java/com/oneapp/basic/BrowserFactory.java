@@ -31,15 +31,13 @@ public class BrowserFactory {
 
 	public static AndroidDriver ad;// Global AndroidDriver
 
-//	@Parameters("Platform")
-	@Parameters({ "PLATFORM_NAME", "DEVICE_NAME", "AUTOMATION_NAME", "UDID" })
-
-	@BeforeMethod
-	public void Browsers_open(String PLATFORM_NAME, String DEVICE_NAME, String AUTOMATION_NAME, String UDID)
-			throws MalformedURLException {
+//	@Parameters({ "PLATFORM_NAME", "DEVICE_NAME", "AUTOMATION_NAME", "UDID" })
+	
+	 @BeforeMethod(alwaysRun = true)
+	public void Browsers_open() throws MalformedURLException {
 
 		// This is origional
-		ad = Create_Driver_Session.Androidsession(PLATFORM_NAME, DEVICE_NAME, AUTOMATION_NAME, UDID);
+		ad = Create_Driver_Session.Androidsession("Android");
 		ad.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
 		Reporter.log("Android emulator gets opened", true);
 
@@ -51,7 +49,7 @@ public class BrowserFactory {
 
 	}
 
-	@AfterMethod
+	 @AfterMethod(alwaysRun = true)
 	public void Browsers_teardown() {
 		// ad.quit();
 		// Reporter.log("Android emulator gets closed", true);

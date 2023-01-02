@@ -18,16 +18,12 @@ public class OTP_Page_Actions {
 public AndroidDriver ad;
 	
 	public OTP_Page_Object opo;
-	public TouchAction ta;
 	
 	public OTP_Page_Actions(AndroidDriver ad)
 	{
 		this.ad=ad;
 		opo=new OTP_Page_Object(ad);
 	}
-	
-	
-	
 	
 	
 	public void Validate_OTP()
@@ -39,8 +35,8 @@ public AndroidDriver ad;
 		opo.getFifthtxtbox().sendKeys("5");
 		opo.getSixthtxtbox().sendKeys("6");
 		
-		 ta=new TouchAction(ad);
-		 ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(530, 1138))).perform();
+
+		 opo.getVerifybtn().click();
 		 System.out.println("I get the vehicle selected page");
 		
 	}

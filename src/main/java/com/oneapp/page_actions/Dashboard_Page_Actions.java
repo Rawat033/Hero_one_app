@@ -57,5 +57,17 @@ public class Dashboard_Page_Actions {
 	{
 		dpo.getServices_icon().click();
 	}
+	
+	public void Goodlife_icon()
+	{
+		dpo.getGoodlife_icon().click();
+	}
+	
+	
+	
+	
+	
+	
+	
 
 }

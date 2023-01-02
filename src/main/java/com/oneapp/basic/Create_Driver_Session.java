@@ -16,16 +16,17 @@ public class Create_Driver_Session {
 	public static DesiredCapabilities dcap;
 
 
-	public static AndroidDriver Androidsession(String PLATFORM_NAME, String DEVICE_NAME, String AUTOMATION_NAME, String UDID) throws MalformedURLException {
+	public static AndroidDriver Androidsession(String BrowserName) throws MalformedURLException {		
 		AndroidDriver ad= null;
 		
 		dcap = new DesiredCapabilities();
 
-	//    For Android Emulator
-		dcap.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM_NAME);
-		dcap.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
-		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AUTOMATION_NAME);
-		dcap.setCapability(MobileCapabilityType.UDID, UDID);
+		
+//	    For Android Emulator
+		dcap.setCapability(MobileCapabilityType.PLATFORM_NAME, BrowserName);
+		dcap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3");
+		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+		dcap.setCapability(MobileCapabilityType.UDID, "emulator-5554");
 		dcap.setCapability("avd", "Pixel_3");
 		dcap.setCapability("avdLaunchTimeout", 400000);
 		dcap.setCapability("readyTimeout", 400000);
@@ -41,7 +42,7 @@ public class Create_Driver_Session {
 //		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 //		dcap.setCapability(MobileCapabilityType.UDID, "dc6ae894");
 
-//		String appURL ="D:\\JAVA\\Eclipse- workspace\\oneapp\\myfiles\\app-debug_multiple_view.apk";
+//		String appURL ="D:\\JAVA\\Eclipse- workspace\\oneapp\\myfiles\\app-debug.apk";
 //		dcap.setCapability(MobileCapabilityType.APP, appURL);
 		dcap.setCapability("appPackage", "com.customerapp.hero");
 		dcap.setCapability("appActivity", "com.customerapp.hero.views.activity.splash.SplashActivity");
