@@ -33,7 +33,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class  Main_Methods extends BrowserFactory{
 	
-	@Test (priority=1, groups={"smoke"})
+	@Test (priority=5, groups={"smoke"})
 	public void Valid_Login_001() throws InterruptedException, IOException
 	{
 		System.out.println(ad.getSessionId());
@@ -126,7 +126,7 @@ public class  Main_Methods extends BrowserFactory{
 		dpa.Handling_Dashboard_All_Popups();
 	}
 	
-	@Test (priority=5, groups={"smoke"})
+	@Test (priority=1, groups={"smoke"})
 	public void Myprofile_changes_Validation_400() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Main_MethodsSuite" class="navigator-link">
-              <span class="suite-name border-failed">Main_MethodsSuite</span>
+              <span class="suite-name border-passed">Main_MethodsSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Main_MethodsSuite" class="hide-methods failed suite-Main_MethodsSuite"> (hide)</a> <!-- hide-methods failed suite-Main_MethodsSuite -->
-                      <a href="#" panel-name="suite-Main_MethodsSuite" class="show-methods failed suite-Main_MethodsSuite"> (show)</a> <!-- show-methods failed suite-Main_MethodsSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-Main_MethodsSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Myprofile_changes_Validation_400">Myprofile_changes_Validation_400</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Verify_OTP_100">Verify_OTP_100</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Main_MethodsSuite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,12 +109,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Myprofile_changes_Validation_400">Myprofile_changes_Validation_400</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Valid_Login_001">Valid_Login_001</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Vehicle_selected_succesfully_200">Vehicle_selected_succesfully_200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Verify_OTP_100">Verify_OTP_100</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Main_MethodsSuite -->
@@ -148,104 +139,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Main_MethodsSuite" class="panel Main_MethodsSuite">
-          <div class="suite-Main_MethodsSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.oneapp.test_suits.Main_Methods</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Myprofile_changes_Validation_400">
-                  </a> <!-- Myprofile_changes_Validation_400 -->
-                  <span class="method-name">Myprofile_changes_Validation_400</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-VABRN9M&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7f97bfde-514a-4402-9702-999653a0a65a
-*** Element info: {Using=id, value=com.customerapp.hero:id/side_menu_btn}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.oneapp.page_actions.Dashboard_Page_Actions.MenubarList(Dashboard_Page_Actions.java:53)
-	at com.oneapp.test_suits.Main_Methods.Myprofile_changes_Validation_400(Main_Methods.java:140)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_OTP_100">
-                  </a> <!-- Verify_OTP_100 -->
-                  <span class="method-name">Verify_OTP_100</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-VABRN9M&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 624c3887-f2c4-4d0e-a5bc-b4b9f4ecbd5e
-*** Element info: {Using=id, value=com.customerapp.hero:id/otp_one_edtxt}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-	at com.oneapp.page_actions.OTP_Page_Actions.Validate_OTP(OTP_Page_Actions.java:31)
-	at com.oneapp.test_suits.Main_Methods.Verify_OTP_100(Main_Methods.java:97)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Main_MethodsSuite-class-failed -->
           <div class="suite-Main_MethodsSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -261,6 +154,13 @@ Session ID: 624c3887-f2c4-4d0e-a5bc-b4b9f4ecbd5e
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="Myprofile_changes_Validation_400">
+                  </a> <!-- Myprofile_changes_Validation_400 -->
+                  <span class="method-name">Myprofile_changes_Validation_400</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Valid_Login_001">
                   </a> <!-- Valid_Login_001 -->
                   <span class="method-name">Valid_Login_001</span>
@@ -271,6 +171,13 @@ Session ID: 624c3887-f2c4-4d0e-a5bc-b4b9f4ecbd5e
                   <a name="Vehicle_selected_succesfully_200">
                   </a> <!-- Vehicle_selected_succesfully_200 -->
                   <span class="method-name">Vehicle_selected_succesfully_200</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_OTP_100">
+                  </a> <!-- Verify_OTP_100 -->
+                  <span class="method-name">Verify_OTP_100</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -360,28 +267,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Myprofile_changes_Validation_400')
 data.setCell(0, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(0, 3, 74855);
+data.setCell(0, 3, 128399);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Dashboard_All_Popups_300')
 data.setCell(1, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(1, 3, 56367);
+data.setCell(1, 3, 54595);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Vehicle_selected_succesfully_200')
 data.setCell(2, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(2, 3, 51016);
+data.setCell(2, 3, 49650);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Verify_OTP_100')
 data.setCell(3, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(3, 3, 33353);
+data.setCell(3, 3, 32975);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Valid_Login_001')
 data.setCell(4, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(4, 3, 12744);
+data.setCell(4, 3, 13491);
 window.suiteTableData['Main_MethodsSuite']= { tableData: data, tableDiv: 'times-div-Main_MethodsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Main_MethodsSuite">
               </div> <!-- times-div-Main_MethodsSuite -->
             </div> <!-- times-div -->
@@ -402,6 +309,10 @@ return data;
               <span class="reporter-method-name">Myprofile_changes_Validation_400</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Location popup is displaying</span>
+                <span class="reporter-method-output">Profile Details</span>
+                <span class="reporter-method-output">AFTER SAVING MY PROFILE DETAILS</span>
+                <span class="reporter-method-output">f30 mumbai bandra east</span>
+                <span class="reporter-method-output">Female</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -450,64 +361,60 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Dashboard_All_Popups_300</span>
-                <span class="method-start">23232 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Browsers_teardown</span>
-                <span class="method-start">79614 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">Browsers_open</span>
-                <span class="method-start">79620 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Myprofile_changes_Validation_400</span>
-                <span class="method-start">98125 ms</span>
+                <span class="method-start">60666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Browsers_teardown</span>
-                <span class="method-start">172991 ms</span>
+                <span class="method-start">189073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Browsers_open</span>
-                <span class="method-start">172993 ms</span>
+                <span class="method-start">189082 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Valid_Login_001</span>
-                <span class="method-start">188436 ms</span>
+                <span class="method-name">Verify_OTP_100</span>
+                <span class="method-start">210544 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Browsers_teardown</span>
-                <span class="method-start">201186 ms</span>
+                <span class="method-start">243522 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Browsers_open</span>
-                <span class="method-start">201198 ms</span>
+                <span class="method-start">243522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Vehicle_selected_succesfully_200</span>
-                <span class="method-start">219914 ms</span>
+                <span class="method-start">264096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Browsers_teardown</span>
-                <span class="method-start">270946 ms</span>
+                <span class="method-start">313752 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Browsers_open</span>
-                <span class="method-start">270958 ms</span>
+                <span class="method-start">313755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Verify_OTP_100</span>
-                <span class="method-start">293091 ms</span>
+                <span class="method-name">Dashboard_All_Popups_300</span>
+                <span class="method-start">334088 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Browsers_teardown</span>
-                <span class="method-start">326449 ms</span>
+                <span class="method-start">388685 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Browsers_open</span>
+                <span class="method-start">388687 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Valid_Login_001</span>
+                <span class="method-start">410112 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Browsers_teardown</span>
+                <span class="method-start">423604 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
