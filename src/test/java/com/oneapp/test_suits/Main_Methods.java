@@ -33,7 +33,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class  Main_Methods extends BrowserFactory{
 	
-	@Test (groups = { "smoke" })
+	@Test (priority=1, groups={"smoke"})
 	public void Valid_Login_001() throws InterruptedException, IOException
 	{
 		System.out.println(ad.getSessionId());
@@ -87,7 +87,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
 	
-	@Test (groups = { "smoke" })
+	@Test (priority=2, groups={"smoke"})
 	public void Verify_OTP_100() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -98,7 +98,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
 	
-	@Test (groups = { "smoke" })
+	@Test (priority=3, groups={"smoke"})
 	public void Vehicle_selected_succesfully_200() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -111,7 +111,8 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
  
-	@Test (groups = { "smoke" })
+	@Test (priority=4, groups={"smoke"})
+	
 	public void Dashboard_All_Popups_300() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -125,7 +126,7 @@ public class  Main_Methods extends BrowserFactory{
 		dpa.Handling_Dashboard_All_Popups();
 	}
 	
-	@Test (groups = { "smoke" })
+	@Test (priority=5, groups={"smoke"})
 	public void Myprofile_changes_Validation_400() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
