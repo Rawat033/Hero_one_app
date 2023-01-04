@@ -1,5 +1,7 @@
 <suite name="Main_MethodsSuite">
-	
+	<listeners>
+<listener class-name="com.oneapp.basic.MyListeners"/>
+</listeners>
 	<test name="Main_MethodsTest">
 
 		<groups>

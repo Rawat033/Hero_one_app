@@ -31,11 +31,11 @@ import com.oneapp.page_actions.Vehicle_Service_Page_actions;
 import io.appium.java_client.android.AndroidDriver;
 
 
-//@Listeners(com.oneapp.basic.MyListeners.class)  
+@Listeners(com.oneapp.basic.MyListeners.class)  
 
 public class  Main_Methods extends BrowserFactory{
 	
-	@Test 
+	@Test (priority=1, groups={"smoke"})
 	public void Valid_Login_001() throws InterruptedException, IOException
 	{
 		System.out.println(ad.getSessionId());
@@ -241,7 +241,7 @@ public class  Main_Methods extends BrowserFactory{
 	 }
 	 
 	 
-	 @Test (priority=1, groups={"smoke"})
+	 @Test 
 	 public void Goodlife_Nonmember_Owner() throws InterruptedException
 	 {
 		Login_Page_Action lpa= new Login_Page_Action(ad);
