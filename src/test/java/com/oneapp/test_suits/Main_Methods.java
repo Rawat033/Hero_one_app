@@ -17,6 +17,8 @@ import com.oneapp.page_actions.Emergency_contact_details_page_actions;
 import com.oneapp.page_actions.Emergency_contact_page_actions;
 import com.oneapp.page_actions.Goodlife_Dashboard_Non_mem_Page_Actions;
 import com.oneapp.page_actions.Goodlife_Plans_Page_Actions;
+import com.oneapp.page_actions.Goodlife_Profile_Details_Form_199_Page_Action;
+import com.oneapp.page_actions.Goodlife_Select_Your_Plan_Page_Action;
 import com.oneapp.page_actions.Login_Page_Action;
 import com.oneapp.page_actions.Menu_Bar_Page_Actions;
 import com.oneapp.page_actions.Myprofile_Page_Actions;
@@ -33,7 +35,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class  Main_Methods extends BrowserFactory{
 	
-	@Test (priority=5, groups={"smoke"})
+	@Test 
 	public void Valid_Login_001() throws InterruptedException, IOException
 	{
 		System.out.println(ad.getSessionId());
@@ -87,7 +89,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
 	
-	@Test (priority=2, groups={"smoke"})
+	@Test
 	public void Verify_OTP_100() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -98,7 +100,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
 	
-	@Test (priority=3, groups={"smoke"})
+	@Test 
 	public void Vehicle_selected_succesfully_200() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -111,7 +113,7 @@ public class  Main_Methods extends BrowserFactory{
 	}
 	
  
-	@Test (priority=4, groups={"smoke"})
+	@Test 
 	
 	public void Dashboard_All_Popups_300() throws InterruptedException 
 	{
@@ -126,7 +128,7 @@ public class  Main_Methods extends BrowserFactory{
 		dpa.Handling_Dashboard_All_Popups();
 	}
 	
-	@Test (priority=1, groups={"smoke"})
+	@Test 
 	public void Myprofile_changes_Validation_400() throws InterruptedException 
 	{
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -239,7 +241,7 @@ public class  Main_Methods extends BrowserFactory{
 	 }
 	 
 	 
-	 @Test 
+	 @Test (priority=1, groups={"smoke"})
 	 public void Goodlife_Nonmember_Owner() throws InterruptedException
 	 {
 		Login_Page_Action lpa= new Login_Page_Action(ad);
@@ -256,6 +258,11 @@ public class  Main_Methods extends BrowserFactory{
  		gdnmpa.Goodlife_dashboard_button();
  		Goodlife_Plans_Page_Actions gppa= new Goodlife_Plans_Page_Actions(ad);
  		gppa.click_on_view_all_benefits();
+ 		Goodlife_Select_Your_Plan_Page_Action gsyppa = new Goodlife_Select_Your_Plan_Page_Action(ad);
+ 		gsyppa.Selecting_Plan();
+ 		Goodlife_Profile_Details_Form_199_Page_Action gpdf_199_pa = new Goodlife_Profile_Details_Form_199_Page_Action(ad);
+ 		gpdf_199_pa.Profile_form_199_checkboxes_and_tap_pay_199_button();
+ 		
  		
 }
 	

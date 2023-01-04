@@ -32,34 +32,23 @@ public class Selected_Vehicle_Page_Actions {
 		
 	//	String bs="Goodlife nonmem";
 		String vin=exceldata.getStringData("Selected Vehicle Page", 0, 0);
+		svpo.getGoodlife_vin().click();
+		System.out.println("Goodlife Vin selected");
 		
-		if (svpo.getBook_service_vin().getText().equalsIgnoreCase(vin))
-		{
-			svpo.getBook_service_vin().click();
-			System.out.println("Book service Vin selected");
-		}
 		
-		else
-		{
-			svpo.getGoodlife_vin().click();
-			System.out.println("Goodlife Vin selected");
-		}
-		
-//		String str1 = "Primary Vehicle";
-//		
-//		if (svpo.getMakeprimary().getText().equalsIgnoreCase(str1))
+//		This is origional
+//		if (svpo.getBook_service_vin().getText().equalsIgnoreCase(vin))
 //		{
-//			System.out.println("Yes my primary Vehicle is " + svpo.getVin_number().getText());
-//			Assert.assertEquals(svpo.getVin_number().getText(), exceldata.getStringData("Selected Vehicle Page", 0, 0));
+//			svpo.getBook_service_vin().click();
+//			System.out.println("Book service Vin selected");
 //		}
 //		
 //		else
 //		{
-//			svpo.getVin_number().click();
-//			System.out.println("Earlier My primary vehicle is different but now " + svpo.getVin_number().getText());
-//			Assert.assertEquals(svpo.getVin_number().getText(), exceldata.getStringData("Selected Vehicle Page", 0, 0));
+//			svpo.getGoodlife_vin().click();
+//			System.out.println("Goodlife Vin selected");
 //		}
-//		
+		
 		svpo.getContinuebtn_selected_vehicle().click();
 		Thread.sleep(10000);
 	}

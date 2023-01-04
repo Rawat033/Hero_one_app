@@ -65,7 +65,7 @@ public class Personal_Details_Page_Actions {
 
 		WebElement email = pdpo.getEmailfield();
 		email.clear();
-		email.sendKeys("gunjan12345@gmail.com");
+		email.sendKeys("gunjan12345677@gmail.com");
 
 		System.out.println("*************************************");
 		Thread.sleep(4000);

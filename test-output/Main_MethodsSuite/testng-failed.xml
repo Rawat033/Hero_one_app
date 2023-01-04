@@ -10,10 +10,9 @@
     <classes>
       <class name="com.oneapp.test_suits.Main_Methods">
         <methods>
-          <include name="Verify_OTP_100"/>
+          <include name="Goodlife_Nonmember_Owner"/>
           <include name="Browsers_open"/>
           <include name="Browsers_teardown"/>
-          <include name="Myprofile_changes_Validation_400"/>
         </methods>
       </class> <!-- com.oneapp.test_suits.Main_Methods -->
     </classes>

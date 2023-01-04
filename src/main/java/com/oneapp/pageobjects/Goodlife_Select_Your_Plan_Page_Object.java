@@ -8,7 +8,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class Goodlife_Select_Your_Plan_Page_Object {
 
-	@FindBy(id = "com.customerapp.hero:id/btn_lay")
+	@FindBy(xpath = "//*[@text='Select Plan']")
 	private WebElement goodlife_select_Plan_btn;
 	
 	

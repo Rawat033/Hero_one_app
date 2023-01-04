@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="15" passed="5" failed="0" skipped="0">
+<testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Android emulator gets opened]]>
@@ -7,136 +7,30 @@
     <line>
       <![CDATA[Location popup is displaying]]>
     </line>
-    <line>
-      <![CDATA[Profile Details]]>
-    </line>
-    <line>
-      <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
-    </line>
-    <line>
-      <![CDATA[f30 mumbai bandra east]]>
-    </line>
-    <line>
-      <![CDATA[Female]]>
-    </line>
-    <line>
-      <![CDATA[Android emulator gets opened]]>
-    </line>
-    <line>
-      <![CDATA[Android emulator gets opened]]>
-    </line>
-    <line>
-      <![CDATA[Android emulator gets opened]]>
-    </line>
-    <line>
-      <![CDATA[Location popup is displaying]]>
-    </line>
-    <line>
-      <![CDATA[Android emulator gets opened]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-01-03T15:32:38 IST" name="Main_MethodsSuite" finished-at="2023-01-03T15:39:41 IST" duration-ms="423698">
+  <suite started-at="2023-01-04T20:42:49 IST" name="Main_MethodsSuite" finished-at="2023-01-04T20:44:57 IST" duration-ms="128664">
     <groups>
       <group name="smoke">
-        <method signature="Main_Methods.Dashboard_All_Popups_300()[pri:4, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" name="Dashboard_All_Popups_300" class="com.oneapp.test_suits.Main_Methods"/>
-        <method signature="Main_Methods.Myprofile_changes_Validation_400()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" name="Myprofile_changes_Validation_400" class="com.oneapp.test_suits.Main_Methods"/>
-        <method signature="Main_Methods.Valid_Login_001()[pri:5, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" name="Valid_Login_001" class="com.oneapp.test_suits.Main_Methods"/>
-        <method signature="Main_Methods.Vehicle_selected_succesfully_200()[pri:3, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" name="Vehicle_selected_succesfully_200" class="com.oneapp.test_suits.Main_Methods"/>
-        <method signature="Main_Methods.Verify_OTP_100()[pri:2, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" name="Verify_OTP_100" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Goodlife_Nonmember_Owner()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4bb33f74]" name="Goodlife_Nonmember_Owner" class="com.oneapp.test_suits.Main_Methods"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-01-03T15:32:38 IST" name="Main_MethodsTest" finished-at="2023-01-03T15:39:41 IST" duration-ms="423698">
+    <test started-at="2023-01-04T20:42:49 IST" name="Main_MethodsTest" finished-at="2023-01-04T20:44:57 IST" duration-ms="128664">
       <class name="com.oneapp.test_suits.Main_Methods">
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:32:38 IST" name="Browsers_open" finished-at="2023-01-03T15:33:38 IST" duration-ms="60658" status="PASS">
+        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4bb33f74]" started-at="2023-01-04T20:42:49 IST" name="Browsers_open" finished-at="2023-01-04T20:43:20 IST" duration-ms="31300" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Android emulator gets opened]]>
             </line>
           </reporter-output>
         </test-method> <!-- Browsers_open -->
-        <test-method signature="Myprofile_changes_Validation_400()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:33:38 IST" name="Myprofile_changes_Validation_400" finished-at="2023-01-03T15:35:47 IST" duration-ms="128399" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Location popup is displaying]]>
-            </line>
-            <line>
-              <![CDATA[Profile Details]]>
-            </line>
-            <line>
-              <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
-            </line>
-            <line>
-              <![CDATA[f30 mumbai bandra east]]>
-            </line>
-            <line>
-              <![CDATA[Female]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Myprofile_changes_Validation_400 -->
-        <test-method is-config="true" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:35:47 IST" name="Browsers_teardown" finished-at="2023-01-03T15:35:47 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browsers_teardown -->
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:35:47 IST" name="Browsers_open" finished-at="2023-01-03T15:36:08 IST" duration-ms="21462" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Android emulator gets opened]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browsers_open -->
-        <test-method signature="Verify_OTP_100()[pri:2, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:36:08 IST" name="Verify_OTP_100" finished-at="2023-01-03T15:36:41 IST" duration-ms="32975" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_OTP_100 -->
-        <test-method is-config="true" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:36:41 IST" name="Browsers_teardown" finished-at="2023-01-03T15:36:41 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browsers_teardown -->
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:36:41 IST" name="Browsers_open" finished-at="2023-01-03T15:37:02 IST" duration-ms="20574" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Android emulator gets opened]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browsers_open -->
-        <test-method signature="Vehicle_selected_succesfully_200()[pri:3, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:37:02 IST" name="Vehicle_selected_succesfully_200" finished-at="2023-01-03T15:37:51 IST" duration-ms="49650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Vehicle_selected_succesfully_200 -->
-        <test-method is-config="true" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:37:51 IST" name="Browsers_teardown" finished-at="2023-01-03T15:37:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browsers_teardown -->
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:37:51 IST" name="Browsers_open" finished-at="2023-01-03T15:38:12 IST" duration-ms="20332" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Android emulator gets opened]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browsers_open -->
-        <test-method signature="Dashboard_All_Popups_300()[pri:4, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:38:12 IST" name="Dashboard_All_Popups_300" finished-at="2023-01-03T15:39:06 IST" duration-ms="54595" status="PASS">
+        <test-method signature="Goodlife_Nonmember_Owner()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4bb33f74]" started-at="2023-01-04T20:43:20 IST" name="Goodlife_Nonmember_Owner" finished-at="2023-01-04T20:44:57 IST" duration-ms="96750" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Location popup is displaying]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Dashboard_All_Popups_300 -->
-        <test-method is-config="true" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:39:06 IST" name="Browsers_teardown" finished-at="2023-01-03T15:39:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browsers_teardown -->
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:39:06 IST" name="Browsers_open" finished-at="2023-01-03T15:39:28 IST" duration-ms="21423" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Android emulator gets opened]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browsers_open -->
-        <test-method signature="Valid_Login_001()[pri:5, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:39:28 IST" name="Valid_Login_001" finished-at="2023-01-03T15:39:41 IST" duration-ms="13491" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Valid_Login_001 -->
-        <test-method is-config="true" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4d02f94e]" started-at="2023-01-03T15:39:41 IST" name="Browsers_teardown" finished-at="2023-01-03T15:39:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- Goodlife_Nonmember_Owner -->
+        <test-method is-config="true" signature="Browsers_teardown()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4bb33f74]" started-at="2023-01-04T20:44:57 IST" name="Browsers_teardown" finished-at="2023-01-04T20:44:57 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browsers_teardown -->

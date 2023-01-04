@@ -55,5 +55,9 @@ public class BrowserFactory {
 		// Reporter.log("Android emulator gets closed", true);
 	}
 
+	 public static String getcapcture() {
+			TakesScreenshot ts=(TakesScreenshot) ad;
+			return ts.getScreenshotAs(OutputType.BASE64);
+		}
 
 }
