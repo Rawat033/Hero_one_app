@@ -22,8 +22,14 @@ public class Dashboard_Page_Actions {
 	}
 
 	public void Handling_Dashboard_All_Popups() throws InterruptedException {
-		WebElement popup_dis = dpo.getLocation_pop_displaying().get(4);
-		if (popup_dis.isDisplayed())
+		Thread.sleep(3000);
+		
+		String str= "Allow Hero App to access this device’s location?";
+		String popup_dis = dpo.getLocation_pop_displaying().getText();
+		
+//		WebElement popup_dis = dpo.getLocation_pop_displaying().get(4);
+		if (popup_dis.equalsIgnoreCase(str))
+//		if (popup_dis.isDisplayed())
 		{
 			dpo.getLocation_popup().click();
 			Thread.sleep(3000);
@@ -32,7 +38,7 @@ public class Dashboard_Page_Actions {
 		
 		else
 		{
-			Reporter.log("Location popup is not displaying", true);
+			Reporter.log("Location popup is not displaying because it has already enabled", true);
 		}
 		
 //		dpo.getNearby_devices_popup().click();

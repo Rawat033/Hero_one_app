@@ -26,6 +26,9 @@ public class MyProfile_Page_Object {
 	@FindBy(id = "com.customerapp.hero:id/emergency_contacts")
 	private WebElement emergency_contact_txt;
 	
+	@FindBy(id = "com.customerapp.hero:id/back_btn")
+	private WebElement back_icon;
+	
 
 	public MyProfile_Page_Object(AndroidDriver ad) {
 
@@ -65,5 +68,12 @@ public class MyProfile_Page_Object {
 	}
 
 
+	public WebElement getBack_icon() {
+		return back_icon;
+	}
+
+
+	
+	
 
 }

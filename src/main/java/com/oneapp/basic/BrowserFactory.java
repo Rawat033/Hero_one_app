@@ -44,7 +44,7 @@ public class BrowserFactory {
 
 //	@Parameters({ "PLATFORM_NAME", "DEVICE_NAME", "AUTOMATION_NAME", "UDID" })
 	
-	 @BeforeMethod(alwaysRun = true)
+	 @BeforeClass(alwaysRun = true)
 	public void Browsers_open() throws MalformedURLException {
 
 		// This is origional
@@ -60,75 +60,80 @@ public class BrowserFactory {
 
 	}
 
-	 @AfterMethod(alwaysRun = true)
-	public void Browsers_teardown(ITestResult result) 
-	 {
-		 String methodName = result.getMethod().getMethodName();
-		 if (result.getStatus()== ITestResult.FAILURE)
-		 {
-			  String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-			  extentTest.fail("<details><summary><b><font color=red>Exception Occured, click to see details:"
-					  + "</font></b><summary>" + exceptionMessage.replaceAll(",","<br>") + "</details> \n");
-			  
-			  String path = takeScreenshot(result.getMethod().getMethodName());
-			  try
-			  {
-				  extentTest.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b>",
-						  MediaEntityBuilder.createScreenCaptureFromPath(path).build());
-			  } catch(IOException e)
-			  {
-				  extentTest.fail("Test Failed, cannnot attach screenshot");
-			  }
-			  
-			  String logText = "<b>Test Method " + methodName + " Failed</b>";
-			  Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
-			  extentTest.log(Status.FAIL,m);
-		 } 
-		 else if(result.getStatus()== ITestResult.SUCCESS)
-		 {
-			 String logText = "<b>Test Method " + methodName + " Successful</b>";
-			  Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
-			  extentTest.log(Status.PASS,m);
-		 }
-		 else if(result.getStatus()== ITestResult.SUCCESS)
-		 {
-			 String logText = "<b>Test Method " + methodName + " Skipped</b>";
-			  Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
-			  extentTest.log(Status.SKIP,m);
-		 }
-		 
-	}
+//	 @AfterMethod(alwaysRun = true)
+//	public void Browsers_teardown(ITestResult result) 
+//	 {
+//		 String methodName = result.getMethod().getMethodName();
+//		 if (result.getStatus()== ITestResult.FAILURE)
+//		 {
+//			  String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
+//			  extentTest.fail("<details><summary><b><font color=red>Exception Occured, click to see details:"
+//					  + "</font></b><summary>" + exceptionMessage.replaceAll(",","<br>") + "</details> \n");
+//			  
+//			  String path = takeScreenshot(result.getMethod().getMethodName());
+//			  try
+//			  {
+//				  extentTest.fail("<b><font color=red>" + "Screenshot of failure" + "</font></b>",
+//						  MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+//			  } catch(IOException e)
+//			  {
+//				  extentTest.fail("Test Failed, cannnot attach screenshot");
+//			  }
+//			  
+//			  String logText = "<b>Test Method " + methodName + " Failed</b>";
+//			  Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
+//			  extentTest.log(Status.FAIL,m);
+//		 } 
+//		 else if(result.getStatus()== ITestResult.SUCCESS)
+//		 {
+//			 String logText = "<b>Test Method " + methodName + " Successful</b>";
+//			  Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
+//			  extentTest.log(Status.PASS, m );
+//		 }
+//		 else if(result.getStatus()== ITestResult.SUCCESS)
+//		 {
+//			 String logText = "<b>Test Method " + methodName + " Skipped</b>";
+//			  Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
+//			  extentTest.log(Status.SKIP,m);
+//		 }
+//		 
+//	}
+//	 
+//	 public String takeScreenshot(String methodName)
+//	 {
+//		 String fileName = getScreenshotName(methodName);
+//		String directory = System.getProperty("user.dir") + "/screenshots/";
+//		new File(directory).mkdir();
+//		String path = directory + fileName;
+//		
+//		try
+//		{
+//			File screenshot = ((TakesScreenshot)ad).getScreenshotAs(OutputType.FILE);
+//			FileUtils.copyFile(screenshot, new File(path));
+//			System.out.println("********************");
+//			System.out.println("Screenshot stored at: " + path);
+//			System.out.println("********************");
+//			
+//		} catch (Exception e)
+//		{
+//			e.printStackTrace();
+//		}
+//		 return path;
+//	 }
+//	 
+//	 public static String getScreenshotName(String methodName)
+//	 {
+//		 Date d= new Date();
+//		 String fileName = methodName + "_"+ d.toString().replace(":", "_").replace("", "_") + ".png";
+//		 return fileName;
+//	 }
 	 
-	 public String takeScreenshot(String methodName)
-	 {
-		 String fileName = getScreenshotName(methodName);
-		String directory = System.getProperty("user.dir") + "/screenshots/";
-		new File(directory).mkdir();
-		String path = directory + fileName;
-		
-		try
-		{
-			File screenshot = ((TakesScreenshot)ad).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(screenshot, new File(path));
-			System.out.println("********************");
-			System.out.println("Screenshot stored at: " + path);
-			System.out.println("********************");
-			
-		} catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-		 return path;
-	 }
-	 
-	 public static String getScreenshotName(String methodName)
-	 {
-		 Date d= new Date();
-		 String fileName = methodName + "_"+ d.toString().replace(":", "_").replace("", "_") + ".png";
-		 return fileName;
-	 }
-	 
-	 
+//	 @AfterClass (alwaysRun = true)
+//	 public void tearn_down()
+//	 {
+//		 System.out.println("****************************");
+//		 System.out.println("All test cases have executed");
+//	 }
 	 
 	 
 	 

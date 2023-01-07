@@ -9,42 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Main_MethodsSuite</th></tr>
-<tr><td><a href="#t0">Main_MethodsTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">74,358</td><td>smoke</td><td></td></tr>
+<tr><td><a href="#t0">Main_MethodsTest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">509,894</td><td>smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Main_MethodsSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Main_MethodsTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.oneapp.test_suits.Main_Methods</td><td><a href="#m0">Browsers_teardown</a></td><td rowspan="1">1672854106069</td><td rowspan="1">13</td></tr><tr><th colspan="4">Main_MethodsTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.oneapp.test_suits.Main_Methods</td><td><a href="#m1">Valid_Login_001</a></td><td rowspan="1">1672854071955</td><td rowspan="1">31781</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Main_MethodsSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Main_MethodsTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.oneapp.test_suits.Main_Methods</td><td><a href="#m0">Bookservice_FSC</a></td><td rowspan="1">1673097108555</td><td rowspan="1">123966</td></tr><tr class="passedeven"><td><a href="#m1">Emergency_contact_added_succesfully</a></td><td rowspan="1">1673097026417</td><td rowspan="1">73567</td></tr><tr class="passedeven"><td><a href="#m2">Emergency_contact_deleted_succesfully</a></td><td rowspan="1">1673097099986</td><td rowspan="1">8566</td></tr><tr class="passedeven"><td><a href="#m3">Goodlife_Nonmember_Owner</a></td><td rowspan="1">1673097232523</td><td rowspan="1">84835</td></tr><tr class="passedeven"><td><a href="#m4">Myprofile_changes_Validation_400</a></td><td rowspan="1">1673096906321</td><td rowspan="1">120091</td></tr><tr class="passedeven"><td><a href="#m5">Verify_OTP_100</a></td><td rowspan="1">1673096841606</td><td rowspan="1">64691</td></tr></tbody>
 </table>
-<h2>Main_MethodsTest</h2><h3 id="m0">com.oneapp.test_suits.Main_Methods#Browsers_teardown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=Valid_Login_001 status=FAILURE method=Main_Methods.Valid_Login_001()[pri:1, instance:com.oneapp.test_suits.Main_Methods@72d6b3ba] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.fail(String)&quot; because &quot;com.oneapp.basic.BrowserFactory.extentTest&quot; is null
-	at com.oneapp.basic.BrowserFactory.Browsers_teardown(BrowserFactory.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.oneapp.test_suits.Main_Methods#Valid_Login_001</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-VABRN9M&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 730a9500-a19e-4f17-8c03-4cd98ab49a84
-*** Element info: {Using=xpath, value=//*[@text=&apos;login&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at com.oneapp.page_actions.Login_Page_Action.validate_login(Login_Page_Action.java:109)
-	at com.oneapp.test_suits.Main_Methods.Valid_Login_001(Main_Methods.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Main_MethodsTest</h2><h3 id="m0">com.oneapp.test_suits.Main_Methods#Bookservice_FSC</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Self Job Card<br/>Key Issues<br/>Book Service</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.oneapp.test_suits.Main_Methods#Emergency_contact_added_succesfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">8130998133</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.oneapp.test_suits.Main_Methods#Emergency_contact_deleted_succesfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Contact deleted succesfully and now displaying Add Emergency contact</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.oneapp.test_suits.Main_Methods#Goodlife_Nonmember_Owner</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.oneapp.test_suits.Main_Methods#Myprofile_changes_Validation_400</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Profile Details<br/>AFTER SAVING MY PROFILE DETAILS<br/>f30 mumbai bandra east<br/>Female</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.oneapp.test_suits.Main_Methods#Verify_OTP_100</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Location popup is displaying</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

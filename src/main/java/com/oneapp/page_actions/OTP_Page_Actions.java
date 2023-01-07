@@ -41,8 +41,10 @@ public AndroidDriver ad;
 		
 	}
 	
-	
-	
+	 public void Click_edit()
+	 {
+		 opo.getEdit_button().click();
+	 }
 	
 	
 	

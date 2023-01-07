@@ -15,6 +15,8 @@ public class Menu_Bar_Page_Object {
 	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView")
 	private WebElement Tips_and_DIY_videos_menu_bar_text;
 	
+	@FindBy(xpath = "//*[@text='Logout']")
+	private WebElement logout_menu_bar_txt;
 	
 
 	public Menu_Bar_Page_Object(AndroidDriver ad) {
@@ -32,6 +34,12 @@ public class Menu_Bar_Page_Object {
 	public WebElement getTips_and_DIY_videos_menu_bar_text() {
 		return Tips_and_DIY_videos_menu_bar_text;
 	}
+
+
+	public WebElement getLogout_menu_bar_txt() {
+		return logout_menu_bar_txt;
+	}
+
 
 	
 	

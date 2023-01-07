@@ -28,5 +28,11 @@ public class Menu_Bar_Page_Actions {
 		mbpo.getTips_and_DIY_videos_menu_bar_text().click();
 		Thread.sleep(4000);
 	}
+	
+	 public void logout_Menu_bar()
+	 {
+		 mbpo.getLogout_menu_bar_txt().click();
+	 }
+	
 
 }

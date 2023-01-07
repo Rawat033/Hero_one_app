@@ -29,6 +29,9 @@ public class OTP_Page_Object {
 	@FindBy(id="com.customerapp.hero:id/btn_lay")
 	private WebElement verifybtn;
 	
+	@FindBy(id="com.customerapp.hero:id/edit_phn_no_btn")
+	private WebElement edit_button;
+	
 	public OTP_Page_Object(AndroidDriver ad)
 	{
 		
@@ -62,6 +65,10 @@ public class OTP_Page_Object {
 
 	public WebElement getVerifybtn() {
 		return verifybtn;
+	}
+
+	public WebElement getEdit_button() {
+		return edit_button;
 	}
 	
 	

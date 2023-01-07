@@ -53,7 +53,7 @@ public class MyListeners extends BrowserFactory implements ITestListener {
 		public void onTestFailure(ITestResult result) {
 			String methodName = result.getMethod().getMethodName();
 			String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-			extent_test.get().fail("<details><summary><b><font color=red>Exception Occured, click to see details:"
+			extent_test.get().fail("<details><summary><b><font color=red>Exception Occured, Please see details:"
 					  + "</font></b><summary>" + exceptionMessage.replaceAll(",","<br>") + "</details> \n");
 			  
 			  String path = takeScreenshot(result.getMethod().getMethodName());

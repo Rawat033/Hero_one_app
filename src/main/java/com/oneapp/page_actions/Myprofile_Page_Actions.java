@@ -30,6 +30,11 @@ public class Myprofile_Page_Actions {
 		mppo.getEditprofile_details_btn().click();
 	}
 
+	public void click_back_icon()
+	{
+		mppo.getBack_icon().click();
+		
+	}
 	public void profile_details_after_saving_validation()
 
 	{

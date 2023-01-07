@@ -53,9 +53,14 @@ public class Book_service_selfJobCard_page_actions {
 		bssjcpo.getKey_issues_text().click();
 
 		bssjcpo.getOther_issues_textbox().sendKeys("Testing");
-		
-		Reporter.log(bssjcpo.getBook_service_btn().getText(), true);
 
+		String str4="Book Service";
+		Reporter.log(bssjcpo.getBook_service_btn().getText(), true);
+		sa.assertEquals(bssjcpo.getBook_service_btn().getText(), str4);
+		
+		bssjcpo.getBook_service_btn().click();
+		Thread.sleep(22000);
+		
 	}
 
 }

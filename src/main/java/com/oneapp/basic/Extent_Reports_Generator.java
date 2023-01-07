@@ -16,7 +16,7 @@ public class Extent_Reports_Generator {
 	public static ExtentReports getreports() {
 		String fileName = getReportName();
 		
-		String directory= "D:\\JAVA\\Eclipse- workspace\\oneapp\\Reports\\index.html";
+		String directory= "D:\\JAVA\\Eclipse- workspace\\oneapp\\Reports\\index.html ";
 		String path= directory + fileName;
 		report = new ExtentHtmlReporter(path);
 		
@@ -26,7 +26,7 @@ public class Extent_Reports_Generator {
 		
 		extent=new ExtentReports();
 		extent.attachReporter(report);
-		extent.setSystemInfo("Laptop-Lenovo", "Hero_App");
+		extent.setSystemInfo("Project Name", "Hero_App");
 		extent.setSystemInfo("QA", "Gunjan Rawat");
 		extent.setSystemInfo("Operating system", "Windows 10");
 		return extent;

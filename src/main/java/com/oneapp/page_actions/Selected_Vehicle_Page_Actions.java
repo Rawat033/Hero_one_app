@@ -28,29 +28,35 @@ public class Selected_Vehicle_Page_Actions {
 		 exceldata= new ExcelData();
 	}
 
+	public void Assertion_selected_vehicle_page()
+	{
+		String expected = svpo.getGoodlife_vin().getText();
+		String actual = "Goodlife nonmem";
+		Assert.assertEquals(actual, expected);
+	}
 	public void Vehicle_Select() throws InterruptedException {
 		
 	//	String bs="Goodlife nonmem";
-		String vin=exceldata.getStringData("Selected Vehicle Page", 0, 0);
-		svpo.getGoodlife_vin().click();
-		System.out.println("Goodlife Vin selected");
+		String vin=exceldata.getStringData("Selected Vehicle Page", 1, 0);
+//		svpo.getGoodlife_vin().click();
+//		System.out.println("Bookservice Vin selected");
 		
 		
 //		This is origional
-//		if (svpo.getBook_service_vin().getText().equalsIgnoreCase(vin))
-//		{
-//			svpo.getBook_service_vin().click();
-//			System.out.println("Book service Vin selected");
-//		}
-//		
-//		else
-//		{
-//			svpo.getGoodlife_vin().click();
-//			System.out.println("Goodlife Vin selected");
-//		}
+		if (svpo.getBook_service_vin().getText().equalsIgnoreCase(vin))
+		{
+			svpo.getBook_service_vin().click();
+			System.out.println("Book service FSC Vin selected");
+		}
+		
+		else
+		{
+			svpo.getGoodlife_vin().click();
+			System.out.println("Goodlife Vin selected");
+		}
 		
 		svpo.getContinuebtn_selected_vehicle().click();
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 	}
 
 	}

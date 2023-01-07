@@ -12,10 +12,13 @@ public class Book_service_service_center_page_object {
 	private WebElement select_service_center_textbox;
 	
 	@FindBy(id="com.customerapp.hero:id/radio1")
-	private WebElement service_Type_radio_button;
+	private WebElement free_service_radio_button;
 	
 	@FindBy(id="com.customerapp.hero:id/btn_lbl")
 	private WebElement continue_btn;
+	
+	@FindBy(id="com.customerapp.hero:id/radio2")
+	private WebElement paid_service_radio_button;
 	
 	
 	public Book_service_service_center_page_object(AndroidDriver ad)
@@ -32,13 +35,19 @@ public class Book_service_service_center_page_object {
 
 
 	public WebElement getService_Type_radio_button() {
-		return service_Type_radio_button;
+		return free_service_radio_button;
 	}
 
 
 	public WebElement getContinue_btn() {
 		return continue_btn;
 	}
+
+
+	public WebElement getPaid_service_radio_button() {
+		return paid_service_radio_button;
+	}
+
 	
 	
 	

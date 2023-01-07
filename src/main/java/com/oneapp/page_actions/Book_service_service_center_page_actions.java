@@ -36,8 +36,20 @@ public class Book_service_service_center_page_actions {
 		}
 
 		bsscpo.getContinue_btn().click();
-		Thread.sleep(6000);
+		
 	}
 	
+	public void Verifying_service_type()
+	{
+		String toast_message = ad.findElementByXPath("//android.widget.Toast[1]").getAttribute("name");
+		System.out.println(toast_message);
+		
+		if (toast_message.equalsIgnoreCase("You have consumed all your free services, Please select other service."));
+		{
+			bsscpo.getPaid_service_radio_button().click();
+			bsscpo.getContinue_btn().click();
+		}
+		
+	}
 	
 }

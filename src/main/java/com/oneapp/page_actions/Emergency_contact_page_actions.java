@@ -62,4 +62,13 @@ public class Emergency_contact_page_actions {
 		 Reporter.log("Contact deleted succesfully and now displaying "+ecpo.getAdd_emergency_contact_link().getText(), true);
 	}
 	
+	public void click_back_icon()
+	{
+		ecpo.getBack_icon().click();
+		
+	}
+	
+	
+	
+	
 }

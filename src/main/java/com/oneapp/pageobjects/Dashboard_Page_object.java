@@ -29,8 +29,11 @@ public class Dashboard_Page_object {
 	@FindBy(id="com.android.permissioncontroller:id/permission_allow_button")
 	private WebElement sms_messages_popup;
 
-	@FindBy(className="android.widget.LinearLayout")
-	private List<WebElement> Location_pop_displaying;
+//	@FindBy(className="android.widget.LinearLayout")
+//	private List<WebElement> Location_pop_displaying;
+	
+	@FindBy(xpath="//*[@text='Allow Hero App to access this device’s location?']")
+	private WebElement Location_pop_displaying;
 	
 	@FindBy(id="com.customerapp.hero:id/side_menu_btn")
 	private WebElement menu_bar_icon;
@@ -91,7 +94,7 @@ public class Dashboard_Page_object {
 
 
 
-	public List<WebElement> getLocation_pop_displaying() {
+	public WebElement getLocation_pop_displaying() {
 		return Location_pop_displaying;
 	}
 

@@ -104,9 +104,11 @@ public class Login_Page_Action {
 		Assert.assertEquals(actuallogo, Expectedlogo);
 		System.out.println("My Validation has passed");
 		System.out.println(lpo.getHerologo().getText());
-		lpo.getMobile_num_field().sendKeys(exceldata.getStringData("Login Page", 1, 0));
-	//	lpo.getlogin_btn().click();
-		ad.findElementByXPath("//*[@text='Continue']").click();
+		WebElement mob_num = lpo.getMobile_num_field();
+		mob_num.clear();
+		mob_num.sendKeys(exceldata.getStringData("Login Page", 0, 0));
+		lpo.getlogin_btn().click();
+	//	ad.findElementByXPath("//*[@text='Continue']").click();
 		Thread.sleep(5000);
 		
 	}
@@ -132,13 +134,12 @@ public class Login_Page_Action {
 
 		WebElement Enter_mob_num = lpo.getMobile_num_field();
 		
-		Enter_mob_num.sendKeys(exceldata.getStringData("Login",2,0));
+		Enter_mob_num.sendKeys(exceldata.getStringData("Login Page",2,0));
 
-		if (exceldata.getStringData("Login",2,0).contains("9958")) {
+		if (exceldata.getStringData("Login Page",2,0).contains("9958")) {
 			Thread.sleep(3000);
 			boolean enabl_btn = lpo.getlogin_btn().isEnabled();
 			System.out.println("Button is disabled "+ enabl_btn);
-
 		}
 
 		else {

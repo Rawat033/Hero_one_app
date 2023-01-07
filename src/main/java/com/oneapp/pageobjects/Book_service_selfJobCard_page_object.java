@@ -26,7 +26,7 @@ public class Book_service_selfJobCard_page_object {
 	private WebElement other_issues_textbox;
 	
 	
-	@FindBy(id="com.customerapp.hero:id/btn_lay")
+	@FindBy(id="com.customerapp.hero:id/btn_lbl")
 	private WebElement book_service_btn;
 	
 	

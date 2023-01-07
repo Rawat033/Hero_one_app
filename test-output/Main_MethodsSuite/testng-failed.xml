@@ -13,9 +13,12 @@
     <classes>
       <class name="com.oneapp.test_suits.Main_Methods">
         <methods>
-          <include name="Valid_Login_001"/>
+          <include name="Emergency_contact_added_succesfully"/>
+          <include name="Emergency_contact_deleted_succesfully"/>
+          <include name="Goodlife_Nonmember_Owner"/>
           <include name="Browsers_open"/>
-          <include name="Browsers_teardown"/>
+          <include name="Bookservice_FSC"/>
+          <include name="Myprofile_changes_Validation_400"/>
         </methods>
       </class> <!-- com.oneapp.test_suits.Main_Methods -->
     </classes>

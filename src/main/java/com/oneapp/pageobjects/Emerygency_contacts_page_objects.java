@@ -31,6 +31,8 @@ public class Emerygency_contacts_page_objects {
 	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView")
 	private WebElement delete_btn;
 	
+	@FindBy(id = "com.customerapp.hero:id/back_btn")
+	private WebElement back_icon;
 	
 	public Emerygency_contacts_page_objects(AndroidDriver ad) {
 
@@ -65,6 +67,12 @@ public class Emerygency_contacts_page_objects {
 	public WebElement getDelete_btn() {
 		return delete_btn;
 	}
+
+	public WebElement getBack_icon() {
+		return back_icon;
+	}
+
+
 
 	
 	
