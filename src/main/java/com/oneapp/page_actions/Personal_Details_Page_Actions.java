@@ -2,6 +2,7 @@ package com.oneapp.page_actions;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
@@ -65,8 +66,11 @@ public class Personal_Details_Page_Actions {
 
 		WebElement email = pdpo.getEmailfield();
 		email.clear();
-		email.sendKeys("gunjan0007@gmail.com");
-
+		
+		Random randomGenerator = new Random();  
+		int randomInt = randomGenerator.nextInt(10000);  
+		email.sendKeys("gunjanrawat"+ randomInt +"@gmail.com"); 
+		
 		System.out.println("*************************************");
 		Thread.sleep(4000);
 

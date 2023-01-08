@@ -235,7 +235,7 @@ public class Main_Methods extends BrowserFactory {
 		mbpa.Tips_and_DIY_Menu_bar();
 	}
 
-	@Test  (priority=5, groups={"smoke"})
+	@Test // (priority=5, groups={"smoke"})
 	public void Bookservice_FSC() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -270,7 +270,7 @@ public class Main_Methods extends BrowserFactory {
 		
 	}
 
-	@Test (priority=6, groups={"smoke"})
+	@Test (priority=5, groups={"smoke"})
 	public void Goodlife_Nonmember_Owner() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
