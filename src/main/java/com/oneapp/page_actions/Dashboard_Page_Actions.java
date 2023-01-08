@@ -30,6 +30,7 @@ public class Dashboard_Page_Actions {
 //		WebElement popup_dis = dpo.getLocation_pop_displaying().get(4);
 		if (str.contains(popup_dis))
 //		if (popup_dis.isDisplayed())
+			
 		{
 			dpo.getLocation_popup().click();
 			Thread.sleep(3000);
