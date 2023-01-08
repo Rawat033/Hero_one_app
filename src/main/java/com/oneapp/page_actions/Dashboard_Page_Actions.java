@@ -22,7 +22,7 @@ public class Dashboard_Page_Actions {
 	}
 
 	public void Handling_Dashboard_All_Popups() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		
 		String str= "Allow Hero App to access this device’s location?";
 		String popup_dis = dpo.getLocation_pop_displaying().getText();
