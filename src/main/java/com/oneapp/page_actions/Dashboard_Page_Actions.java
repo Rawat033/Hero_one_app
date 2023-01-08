@@ -28,7 +28,7 @@ public class Dashboard_Page_Actions {
 		String popup_dis = dpo.getLocation_pop_displaying().getText();
 		
 //		WebElement popup_dis = dpo.getLocation_pop_displaying().get(4);
-		if (popup_dis.equalsIgnoreCase(str))
+		if (str.contains(popup_dis))
 //		if (popup_dis.isDisplayed())
 		{
 			dpo.getLocation_popup().click();

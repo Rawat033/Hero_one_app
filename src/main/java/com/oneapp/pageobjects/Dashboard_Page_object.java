@@ -32,8 +32,15 @@ public class Dashboard_Page_object {
 //	@FindBy(className="android.widget.LinearLayout")
 //	private List<WebElement> Location_pop_displaying;
 	
-	@FindBy(xpath="//*[@text='Allow Hero App to access this device’s location?']")
+//	@FindBy(xpath="//*[contains(text(), 'Allow Hero App to access this?')]")
+//	private WebElement Location_pop_displaying;
+	
+	@FindBy(id="com.android.permissioncontroller:id/permission_message")
 	private WebElement Location_pop_displaying;
+	
+	
+	
+	//*[@text='Allow Hero App to access this device’s location?']
 	
 	@FindBy(id="com.customerapp.hero:id/side_menu_btn")
 	private WebElement menu_bar_icon;

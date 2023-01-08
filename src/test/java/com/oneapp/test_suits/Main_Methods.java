@@ -136,7 +136,7 @@ public class Main_Methods extends BrowserFactory {
 //		dpa.Handling_Dashboard_All_Popups();
 //	}
 
-	@Test  (priority=2, groups={"smoke"})
+	@Test // (priority=2, groups={"smoke"})
 	public void Myprofile_changes_Validation_400() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -163,7 +163,7 @@ public class Main_Methods extends BrowserFactory {
 		System.out.println("Myprofile_changes_Validation_400 Passed");
 	}
 
-	@Test  (priority=3, groups={"smoke"})
+	@Test // (priority=3, groups={"smoke"})
 	public void Emergency_contact_added_succesfully() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -189,7 +189,7 @@ public class Main_Methods extends BrowserFactory {
 
 	}
 
-	@Test  (priority=4, groups={"smoke"})
+	@Test // (priority=4, groups={"smoke"})
 	public void Emergency_contact_deleted_succesfully() throws InterruptedException {
 //    		Login_Page_Action lpa= new Login_Page_Action(ad);
 //    		lpa.validate_login();
@@ -270,7 +270,7 @@ public class Main_Methods extends BrowserFactory {
 		
 	}
 
-	@Test (priority=5, groups={"smoke"})
+	@Test // (priority=5, groups={"smoke"})
 	public void Goodlife_Nonmember_Owner() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
