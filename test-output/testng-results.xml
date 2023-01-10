@@ -1,35 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="13" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="13" passed="5" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Android emulator gets opened]]>
     </line>
     <line>
-      <![CDATA[Location popup is displaying]]>
+      <![CDATA[Profile Details]]>
+    </line>
+    <line>
+      <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
+    </line>
+    <line>
+      <![CDATA[f30 mumbai bandra east]]>
+    </line>
+    <line>
+      <![CDATA[Female]]>
+    </line>
+    <line>
+      <![CDATA[8130998133]]>
+    </line>
+    <line>
+      <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
+    </line>
+    <line>
+      <![CDATA[Self Job Card]]>
+    </line>
+    <line>
+      <![CDATA[Key Issues]]>
+    </line>
+    <line>
+      <![CDATA[Book Service]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-08T18:12:06 IST" name="Main_MethodsSuite" finished-at="2023-01-08T18:13:40 IST" duration-ms="94103">
+  <suite started-at="2023-01-10T21:22:13 IST" name="Main_MethodsSuite" finished-at="2023-01-10T21:29:32 IST" duration-ms="439448">
     <groups>
       <group name="smoke">
-        <method signature="Main_Methods.Verify_OTP_100()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Verify_OTP_100" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Bookservice_FSC_testcase()[pri:5, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Bookservice_FSC_testcase" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Emergency_contact_added_succesfully_testcase" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Emergency_contact_deleted_succesfully_testcase" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Goodlife_Nonmember_Owner_testcase()[pri:6, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Goodlife_Nonmember_Owner_testcase" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Myprofile_changes_Validation_testcase400()[pri:2, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Myprofile_changes_Validation_testcase400" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="Main_Methods.Verify_OTP_testcase100()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" name="Verify_OTP_testcase100" class="com.oneapp.test_suits.Main_Methods"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-01-08T18:12:06 IST" name="Main_MethodsTest" finished-at="2023-01-08T18:13:40 IST" duration-ms="94103">
+    <test started-at="2023-01-10T21:22:13 IST" name="Main_MethodsTest" finished-at="2023-01-10T21:29:32 IST" duration-ms="439448">
       <class name="com.oneapp.test_suits.Main_Methods">
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-08T18:12:06 IST" name="Browsers_open" finished-at="2023-01-08T18:12:30 IST" duration-ms="24011" status="PASS">
+        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:22:13 IST" name="Browsers_open" finished-at="2023-01-10T21:22:37 IST" duration-ms="23784" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Android emulator gets opened]]>
             </line>
           </reporter-output>
         </test-method> <!-- Browsers_open -->
-        <test-method signature="Verify_OTP_100()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-08T18:12:30 IST" name="Verify_OTP_100" finished-at="2023-01-08T18:13:39 IST" duration-ms="69714" status="PASS">
+        <test-method signature="Verify_OTP_testcase100()[pri:1, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:22:37 IST" name="Verify_OTP_testcase100" finished-at="2023-01-10T21:23:54 IST" duration-ms="77374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_OTP_testcase100 -->
+        <test-method signature="Myprofile_changes_Validation_testcase400()[pri:2, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:23:54 IST" name="Myprofile_changes_Validation_testcase400" finished-at="2023-01-10T21:25:55 IST" duration-ms="120815" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Location popup is displaying]]>
+              <![CDATA[Profile Details]]>
+            </line>
+            <line>
+              <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
+            </line>
+            <line>
+              <![CDATA[f30 mumbai bandra east]]>
+            </line>
+            <line>
+              <![CDATA[Female]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Verify_OTP_100 -->
+        </test-method> <!-- Myprofile_changes_Validation_testcase400 -->
+        <test-method signature="Emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:25:55 IST" name="Emergency_contact_added_succesfully_testcase" finished-at="2023-01-10T21:27:13 IST" duration-ms="78417" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[8130998133]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Emergency_contact_added_succesfully_testcase -->
+        <test-method signature="Emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:27:13 IST" name="Emergency_contact_deleted_succesfully_testcase" finished-at="2023-01-10T21:27:22 IST" duration-ms="9074" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Emergency_contact_deleted_succesfully_testcase -->
+        <test-method signature="Bookservice_FSC_testcase()[pri:5, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:27:22 IST" name="Bookservice_FSC_testcase" finished-at="2023-01-10T21:29:27 IST" duration-ms="125045" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Self Job Card]]>
+            </line>
+            <line>
+              <![CDATA[Key Issues]]>
+            </line>
+            <line>
+              <![CDATA[Book Service]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Bookservice_FSC_testcase -->
+        <test-method signature="Goodlife_Nonmember_Owner_testcase()[pri:6, instance:com.oneapp.test_suits.Main_Methods@4bbf6d0e]" started-at="2023-01-10T21:29:27 IST" name="Goodlife_Nonmember_Owner_testcase" finished-at="2023-01-10T21:29:31 IST" duration-ms="3256" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VABRN9M', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\JAVA\Eclipse- workspace\..., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {app: D:\JAVA\Eclipse- workspace\..., automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9802bcad-2779-4654-ad6e-263bffb3419b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VABRN9M', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\JAVA\Eclipse- workspace\..., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {app: D:\JAVA\Eclipse- workspace\..., automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 9802bcad-2779-4654-ad6e-263bffb3419b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.oneapp.page_actions.Login_Page_Action.validate_login(Login_Page_Action.java:102)
+at com.oneapp.test_suits.Main_Methods.Goodlife_Nonmember_Owner_testcase(Main_Methods.java:276)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Goodlife_Nonmember_Owner_testcase -->
       </class> <!-- com.oneapp.test_suits.Main_Methods -->
     </test> <!-- Main_MethodsTest -->
   </suite> <!-- Main_MethodsSuite -->

@@ -16,9 +16,10 @@ public class Logout_Page_Actions {
 		lgpo = new Logout_Page_Object(ad);
 	}
 	
-	public void click_yes_under_logout()
+	public void click_yes_under_logout() throws InterruptedException
 	{
 		lgpo.getYes_text().click();
-	}
+		Thread.sleep(5000);
+		}
 
 }

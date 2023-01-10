@@ -25,6 +25,7 @@ public class Dashboard_Page_Actions {
 		Thread.sleep(5000);
 		
 		dpo.getLocation_popup().click();
+		Thread.sleep(15000);
 		
 //		String str= "Allow Hero App to access this device’s location?";
 //		String popup_dis = dpo.getLocation_pop_displaying().getText();

@@ -13,8 +13,8 @@
     <classes>
       <class name="com.oneapp.test_suits.Main_Methods">
         <methods>
-          <include name="Verify_OTP_100"/>
           <include name="Browsers_open"/>
+          <include name="Goodlife_Nonmember_Owner_testcase"/>
         </methods>
       </class> <!-- com.oneapp.test_suits.Main_Methods -->
     </classes>

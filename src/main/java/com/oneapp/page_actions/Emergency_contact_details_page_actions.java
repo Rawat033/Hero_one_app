@@ -22,12 +22,13 @@ public class Emergency_contact_details_page_actions {
 		ecdpo.getFullname_textbox().sendKeys("Me");
 		ecdpo.getMob_number_txtbox().sendKeys("8130998133");
 		ecdpo.getRelation_type().click();
-		
+		Thread.sleep(4000);		
 		List<WebElement> options = ecdpo.getRelation_typedropdown();
 		
 		for (WebElement element : options) {
 			String val = element.getText();
 			if (val.equalsIgnoreCase("friend")) {
+				Thread.sleep(3000);
 				element.click();
 				break;
 			}

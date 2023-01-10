@@ -36,7 +36,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class Main_Methods extends BrowserFactory {
 
-	@Test
+	@Test 
 	public void Valid_Login_001() throws InterruptedException, IOException {
 		System.out.println(ad.getSessionId());
 		Login_Page_Action lpa = new Login_Page_Action(ad);
@@ -89,7 +89,7 @@ public class Main_Methods extends BrowserFactory {
 	}
 
 	@Test  (priority = 1, groups = { "smoke" })
-	public void Verify_OTP_100() throws InterruptedException {
+	public void Verify_OTP_testcase100() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
 		System.out.println("OTP page");
@@ -106,7 +106,7 @@ public class Main_Methods extends BrowserFactory {
 		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
 		lgpa.click_yes_under_logout();
 		System.out.println("**********************");
-		System.out.println("Verify_OTP_100 Passed");
+		System.out.println("Verify_OTP_testcase100 Passed");
 	}
 
 //	@Test 
@@ -136,8 +136,8 @@ public class Main_Methods extends BrowserFactory {
 //		dpa.Handling_Dashboard_All_Popups();
 //	}
 
-	@Test // (priority=2, groups={"smoke"})
-	public void Myprofile_changes_Validation_400() throws InterruptedException {
+	@Test  (priority=2, groups={"smoke"})
+	public void Myprofile_changes_Validation_testcase400() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
 		System.out.println("OTP page");
@@ -160,11 +160,11 @@ public class Main_Methods extends BrowserFactory {
 		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
 		lgpa.click_yes_under_logout();
 		System.out.println("**********************");
-		System.out.println("Myprofile_changes_Validation_400 Passed");
+		System.out.println("Myprofile_changes_Validation_testcase400 Passed");
 	}
 
-	@Test // (priority=3, groups={"smoke"})
-	public void Emergency_contact_added_succesfully() throws InterruptedException {
+	@Test  (priority=3, groups={"smoke"})
+	public void Emergency_contact_added_succesfully_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
 		System.out.println("OTP page");
@@ -185,12 +185,12 @@ public class Main_Methods extends BrowserFactory {
 		ecdpa.filling_emergency_contact_details();
 		ecpa.saved_contact_val();
 		System.out.println("**********************");
-		System.out.println("Emergency_contact_added_succesfully Passed");
+		System.out.println("Emergency_contact_added_succesfully_testcase Passed");
 
 	}
 
-	@Test // (priority=4, groups={"smoke"})
-	public void Emergency_contact_deleted_succesfully() throws InterruptedException {
+	@Test  (priority=4, groups={"smoke"})
+	public void Emergency_contact_deleted_succesfully_testcase() throws InterruptedException {
 //    		Login_Page_Action lpa= new Login_Page_Action(ad);
 //    		lpa.validate_login();
 //    		System.out.println("OTP page");
@@ -216,7 +216,7 @@ public class Main_Methods extends BrowserFactory {
 		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
 		lgpa.click_yes_under_logout();
 		System.out.println("**********************");
-		System.out.println("Emergency_contact_deleted_succesfully Passed");
+		System.out.println("Emergency_contact_deleted_succesfully_testcase Passed");
 	}
 
 	@Test
@@ -235,8 +235,8 @@ public class Main_Methods extends BrowserFactory {
 		mbpa.Tips_and_DIY_Menu_bar();
 	}
 
-	@Test // (priority=5, groups={"smoke"})
-	public void Bookservice_FSC() throws InterruptedException {
+	@Test  (priority=5, groups={"smoke"})
+	public void Bookservice_FSC_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
 		System.out.println("OTP page");
@@ -266,12 +266,12 @@ public class Main_Methods extends BrowserFactory {
 		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
 		lgpa.click_yes_under_logout();
 		System.out.println("**********************");
-		System.out.println("Bookservice_FSC Passed");
+		System.out.println("Bookservice_FSC_testcase Passed");
 		
 	}
 
-	@Test // (priority=5, groups={"smoke"})
-	public void Goodlife_Nonmember_Owner() throws InterruptedException {
+	@Test  (priority=6, groups={"smoke"})
+	public void Goodlife_Nonmember_Owner_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
 		System.out.println("OTP page");
@@ -292,7 +292,7 @@ public class Main_Methods extends BrowserFactory {
 				ad);
 		gpdf_199_pa.Profile_form_199_checkboxes_and_tap_pay_199_button();
 		System.out.println("**********************");
-		System.out.println("Goodlife_Nonmember_Owner Passed");
+		System.out.println("Goodlife_Nonmember_Owner_testcase Passed");
 
 	}
 

@@ -42,10 +42,10 @@ public class Create_Driver_Session {
 //		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 //		dcap.setCapability(MobileCapabilityType.UDID, "dc6ae894");
 
-//		String appURL ="D:\\JAVA\\Eclipse- workspace\\oneapp\\myfiles\\app-debug.apk";
-//		dcap.setCapability(MobileCapabilityType.APP, appURL);
-		dcap.setCapability("appPackage", "com.customerapp.hero");
-		dcap.setCapability("appActivity", "com.customerapp.hero.views.activity.splash.SplashActivity");
+		String appURL ="D:\\JAVA\\Eclipse- workspace\\oneapp\\myfiles\\app-debug.apk";
+		dcap.setCapability(MobileCapabilityType.APP, appURL);
+//		dcap.setCapability("appPackage", "com.customerapp.hero");
+//		dcap.setCapability("appActivity", "com.customerapp.hero.views.activity.splash.SplashActivity");
 
 		URL url = new URL("http://0.0.0.0:4723/wd/hub");
 
