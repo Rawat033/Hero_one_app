@@ -219,6 +219,16 @@ public class Main_Methods extends BrowserFactory {
 		System.out.println("Emergency_contact_deleted_succesfully_testcase Passed");
 	}
 
+	
+	@Test
+	
+	public void validation_manage_licence_testcase()
+	{
+	
+		
+	}
+	
+	
 	@Test
 	public void Tips_Validation() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
@@ -235,7 +245,7 @@ public class Main_Methods extends BrowserFactory {
 		mbpa.Tips_and_DIY_Menu_bar();
 	}
 
-	@Test  (priority=5, groups={"smoke"})
+	@Test // (priority=5, groups={"smoke"})
 	public void Bookservice_FSC_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -269,8 +279,12 @@ public class Main_Methods extends BrowserFactory {
 		System.out.println("Bookservice_FSC_testcase Passed");
 		
 	}
+	
+	
+	
+	
 
-	@Test  (priority=6, groups={"smoke"})
+	@Test // (priority=6, groups={"smoke"})
 	public void Goodlife_Nonmember_Owner_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
