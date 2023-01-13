@@ -53,11 +53,10 @@ public class Create_Driver_Session {
 
 		// AndroidDriver ad= new AndroidDriver(url, dcap);
 
-	System.out.println("My app has launched in emulator");
+//	System.out.println("My app has launched in emulator");
 
 		ad = new AndroidDriver(url, dcap);
 		ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		ad.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 
 	return ad;
 

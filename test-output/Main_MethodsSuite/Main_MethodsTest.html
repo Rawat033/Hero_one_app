@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Main_MethodsTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 10 21:22:13 IST 2023</td>
+<td>Started on:</td><td>Fri Jan 13 18:01:12 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>439 seconds (439448 ms)</td>
+<tr><td>Total time:</td><td>187 seconds (187709 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke </td>
 </tr><tr>
@@ -67,107 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.oneapp.test_suits.Main_Methods.Goodlife_Nonmember_Owner_testcase()'><b>Goodlife_Nonmember_Owner_testcase</b><br>Test class: com.oneapp.test_suits.Main_Methods</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-VABRN9M&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\JAVA\Eclipse- workspace\..., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {app: D:\JAVA\Eclipse- workspace\..., automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9802bcad-2779-4654-ad6e-263bffb3419b
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at com.oneapp.page_actions.Login_Page_Action.validate_login(Login_Page_Action.java:102)
-	at com.oneapp.test_suits.Main_Methods.Goodlife_Nonmember_Owner_testcase(Main_Methods.java:276)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace334300782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace334300782'><pre>org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-VABRN9M&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: D:\JAVA\Eclipse- workspace\..., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {app: D:\JAVA\Eclipse- workspace\..., automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9802bcad-2779-4654-ad6e-263bffb3419b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at com.oneapp.page_actions.Login_Page_Action.validate_login(Login_Page_Action.java:102)
-	at com.oneapp.test_suits.Main_Methods.Goodlife_Nonmember_Owner_testcase(Main_Methods.java:276)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>com.oneapp.test_suits.Main_Methods@4bbf6d0e</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -176,63 +75,34 @@ Session ID: 9802bcad-2779-4654-ad6e-263bffb3419b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.oneapp.test_suits.Main_Methods.Emergency_contact_deleted_succesfully_testcase()'><b>Emergency_contact_deleted_succesfully_testcase</b><br>Test class: com.oneapp.test_suits.Main_Methods<br/>
-<a href="#Output-1169249153" onClick='toggleBox("Output-1169249153", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1169249153" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1169249153">
-Contact deleted succesfully and now displaying Add Emergency contact<br/>
-</div>
-</td>
+<td title='com.oneapp.test_suits.Main_Methods.validation_manage_licence_testcase()'><b>validation_manage_licence_testcase</b><br>Test class: com.oneapp.test_suits.Main_Methods</td>
 <td></td>
-<td>9</td>
-<td>com.oneapp.test_suits.Main_Methods@4bbf6d0e</td></tr>
-<tr>
-<td title='com.oneapp.test_suits.Main_Methods.Verify_OTP_testcase100()'><b>Verify_OTP_testcase100</b><br>Test class: com.oneapp.test_suits.Main_Methods</td>
-<td></td>
-<td>77</td>
-<td>com.oneapp.test_suits.Main_Methods@4bbf6d0e</td></tr>
+<td>36</td>
+<td>com.oneapp.test_suits.Main_Methods@30b6ffe0</td></tr>
 <tr>
 <td title='com.oneapp.test_suits.Main_Methods.Emergency_contact_added_succesfully_testcase()'><b>Emergency_contact_added_succesfully_testcase</b><br>Test class: com.oneapp.test_suits.Main_Methods<br/>
-<a href="#Output-1810790719" onClick='toggleBox("Output-1810790719", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1257703748" onClick='toggleBox("Output-1257703748", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1810790719" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1810790719">
+<a href="#Output-1257703748" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1257703748">
 8130998133<br/>
 </div>
 </td>
 <td></td>
-<td>78</td>
-<td>com.oneapp.test_suits.Main_Methods@4bbf6d0e</td></tr>
+<td>119</td>
+<td>com.oneapp.test_suits.Main_Methods@30b6ffe0</td></tr>
 <tr>
-<td title='com.oneapp.test_suits.Main_Methods.Bookservice_FSC_testcase()'><b>Bookservice_FSC_testcase</b><br>Test class: com.oneapp.test_suits.Main_Methods<br/>
-<a href="#Output-579983776" onClick='toggleBox("Output-579983776", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.oneapp.test_suits.Main_Methods.Emergency_contact_deleted_succesfully_testcase()'><b>Emergency_contact_deleted_succesfully_testcase</b><br>Test class: com.oneapp.test_suits.Main_Methods<br/>
+<a href="#Output-1351247295" onClick='toggleBox("Output-1351247295", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-579983776" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-579983776">
-Self Job Card<br/>
-Key Issues<br/>
-Book Service<br/>
+<a href="#Output-1351247295" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1351247295">
+Contact deleted succesfully and now displaying Add Emergency contact<br/>
 </div>
 </td>
 <td></td>
-<td>125</td>
-<td>com.oneapp.test_suits.Main_Methods@4bbf6d0e</td></tr>
-<tr>
-<td title='com.oneapp.test_suits.Main_Methods.Myprofile_changes_Validation_testcase400()'><b>Myprofile_changes_Validation_testcase400</b><br>Test class: com.oneapp.test_suits.Main_Methods<br/>
-<a href="#Output-2121573248" onClick='toggleBox("Output-2121573248", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2121573248" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2121573248">
-Profile Details<br/>
-AFTER SAVING MY PROFILE DETAILS<br/>
-f30 mumbai bandra east<br/>
-Female<br/>
-</div>
-</td>
-<td></td>
-<td>120</td>
-<td>com.oneapp.test_suits.Main_Methods@4bbf6d0e</td></tr>
+<td>6</td>
+<td>com.oneapp.test_suits.Main_Methods@30b6ffe0</td></tr>
 </table><p>
 </body>
 </html>

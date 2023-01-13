@@ -14,6 +14,7 @@ import com.oneapp.page_actions.Book_service_selfJobCard_page_actions;
 import com.oneapp.page_actions.Book_service_service_center_page_actions;
 import com.oneapp.page_actions.Booking_confirmed_Page_Action;
 import com.oneapp.page_actions.Dashboard_Page_Actions;
+import com.oneapp.page_actions.Driving_License_Page_Actions;
 import com.oneapp.page_actions.Emergency_contact_details_page_actions;
 import com.oneapp.page_actions.Emergency_contact_page_actions;
 import com.oneapp.page_actions.Goodlife_Dashboard_Non_mem_Page_Actions;
@@ -88,7 +89,7 @@ public class Main_Methods extends BrowserFactory {
 		lpa.Contact_Us();
 	}
 
-	@Test  (priority = 1, groups = { "smoke" })
+	@Test // (priority = 1, groups = { "smoke" })
 	public void Verify_OTP_testcase100() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -136,7 +137,7 @@ public class Main_Methods extends BrowserFactory {
 //		dpa.Handling_Dashboard_All_Popups();
 //	}
 
-	@Test  (priority=2, groups={"smoke"})
+	@Test // (priority=2, groups={"smoke"})
 	public void Myprofile_changes_Validation_testcase400() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -163,7 +164,7 @@ public class Main_Methods extends BrowserFactory {
 		System.out.println("Myprofile_changes_Validation_testcase400 Passed");
 	}
 
-	@Test  (priority=3, groups={"smoke"})
+	@Test  (priority=1, groups={"smoke"})
 	public void Emergency_contact_added_succesfully_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -173,7 +174,7 @@ public class Main_Methods extends BrowserFactory {
 		Selected_Vehicle_Page_Actions svpa = new Selected_Vehicle_Page_Actions(ad);
 		svpa.Vehicle_Select();
 		Dashboard_Page_Actions dpa = new Dashboard_Page_Actions(ad);
-		// dpa.Handling_Dashboard_All_Popups();
+		 dpa.Handling_Dashboard_All_Popups();
 		dpa.MenubarList();
 		Menu_Bar_Page_Actions mbpa = new Menu_Bar_Page_Actions(ad);
 		mbpa.Myprofile_Menu_bar();
@@ -189,7 +190,7 @@ public class Main_Methods extends BrowserFactory {
 
 	}
 
-	@Test  (priority=4, groups={"smoke"})
+	@Test  (priority=2, groups={"smoke"})
 	public void Emergency_contact_deleted_succesfully_testcase() throws InterruptedException {
 //    		Login_Page_Action lpa= new Login_Page_Action(ad);
 //    		lpa.validate_login();
@@ -209,27 +210,33 @@ public class Main_Methods extends BrowserFactory {
 		Emergency_contact_page_actions ecpa = new Emergency_contact_page_actions(ad);
 		ecpa.Deleting_contact();
 		System.out.println("**********************");
-		System.out.println("Emergency_contact_deleted_succesfully");
+		System.out.println("Emergency_contact_deleted_succesfully Passed");
 		ecpa.click_back_icon();
-		mppa.click_back_icon();
-		mbpa.logout_Menu_bar();
-		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
-		lgpa.click_yes_under_logout();
-		System.out.println("**********************");
-		System.out.println("Emergency_contact_deleted_succesfully_testcase Passed");
+//		mppa.click_back_icon();
+//		mbpa.logout_Menu_bar();
+//		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
+//		lgpa.click_yes_under_logout();
+//		System.out.println("**********************");
+//		System.out.println("Emergency_contact_deleted_succesfully_testcase Passed");
 	}
 
 	
-	@Test
-	
-	public void validation_manage_licence_testcase()
+	@Test(priority=3, groups={"smoke"})
+	public void validation_manage_licence_testcase() throws InterruptedException, IOException
 	{
 	
+		Myprofile_Page_Actions mppa= new Myprofile_Page_Actions(ad);
+		mppa.click_manage_licence();
+		Driving_License_Page_Actions dlpa= new Driving_License_Page_Actions(ad);
+		dlpa.click_three_dots();
+		dlpa.uploading_new();
+		System.out.println("**********************");
+		System.out.println("validation_manage_licence_testcase Passed");
 		
 	}
 	
 	
-	@Test
+	@Test 
 	public void Tips_Validation() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();

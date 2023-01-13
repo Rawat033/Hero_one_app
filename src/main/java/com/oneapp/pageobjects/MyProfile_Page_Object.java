@@ -29,6 +29,11 @@ public class MyProfile_Page_Object {
 	@FindBy(id = "com.customerapp.hero:id/back_btn")
 	private WebElement back_icon;
 	
+	@FindBy(id = "com.customerapp.hero:id/manage_license")
+	private WebElement manage_license_text;
+	
+	
+	
 
 	public MyProfile_Page_Object(AndroidDriver ad) {
 
@@ -72,6 +77,10 @@ public class MyProfile_Page_Object {
 		return back_icon;
 	}
 
+
+	public WebElement getManage_license_text() {
+		return manage_license_text;
+	}
 
 	
 	

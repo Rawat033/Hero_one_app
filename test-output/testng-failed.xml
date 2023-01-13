@@ -13,8 +13,10 @@
     <classes>
       <class name="com.oneapp.test_suits.Main_Methods">
         <methods>
+          <include name="Emergency_contact_added_succesfully_testcase"/>
           <include name="Browsers_open"/>
-          <include name="Goodlife_Nonmember_Owner_testcase"/>
+          <include name="validation_manage_licence_testcase"/>
+          <include name="Emergency_contact_deleted_succesfully_testcase"/>
         </methods>
       </class> <!-- com.oneapp.test_suits.Main_Methods -->
     </classes>

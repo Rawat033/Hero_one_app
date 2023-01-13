@@ -51,7 +51,6 @@ public class BrowserFactory {
 		ad = Create_Driver_Session.Androidsession("Android");
 //		ad.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
 		Reporter.log("Android emulator gets opened", true);
-
 		// For Pcloudy
 
 //            	ad = Pcloudy_Create_Driver_Session.Androidsession(Platform);

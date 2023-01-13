@@ -60,9 +60,12 @@ public class Myprofile_Page_Actions {
 		Thread.sleep(3000);
 		mppo.getEmergency_contact_txt().click();
 		
-		
 	
+	}
 	
+	public void click_manage_licence()
+	{
+		mppo.getManage_license_text().click();
 	}
 
 	
