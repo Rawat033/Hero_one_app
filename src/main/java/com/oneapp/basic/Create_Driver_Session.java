@@ -34,6 +34,7 @@ public class Create_Driver_Session {
 		dcap.setCapability("readyTimeout", 400000);
 		dcap.setCapability("newCommandTimeout", 900);
 		
+		
 //		for unlocking device
 //		dcap.setCapability("unlockType", "pin");
 //		dcap.setCapability("unlockKey", "1111");
