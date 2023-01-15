@@ -26,6 +26,7 @@ public class Driving_License_Page_Actions {
 	public void click_three_dots()
 	{
 		dlpo.getThree_dots().click();
+		
 	}
 	
 	public void uploading_new() throws InterruptedException, IOException
