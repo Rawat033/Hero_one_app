@@ -37,7 +37,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class Main_Methods extends BrowserFactory {
 
-	@Test 
+	@Test
 	public void Valid_Login_001() throws InterruptedException, IOException {
 		System.out.println(ad.getSessionId());
 		Login_Page_Action lpa = new Login_Page_Action(ad);
@@ -164,7 +164,7 @@ public class Main_Methods extends BrowserFactory {
 		System.out.println("Myprofile_changes_Validation_testcase400 Passed");
 	}
 
-	@Test  (priority=1, groups={"smoke"})
+	@Test(priority = 1, groups = { "smoke" })
 	public void Emergency_contact_added_succesfully_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -174,7 +174,7 @@ public class Main_Methods extends BrowserFactory {
 		Selected_Vehicle_Page_Actions svpa = new Selected_Vehicle_Page_Actions(ad);
 		svpa.Vehicle_Select();
 		Dashboard_Page_Actions dpa = new Dashboard_Page_Actions(ad);
-		 dpa.Handling_Dashboard_All_Popups();
+		dpa.Handling_Dashboard_All_Popups();
 		dpa.MenubarList();
 		Menu_Bar_Page_Actions mbpa = new Menu_Bar_Page_Actions(ad);
 		mbpa.Myprofile_Menu_bar();
@@ -190,7 +190,7 @@ public class Main_Methods extends BrowserFactory {
 
 	}
 
-	@Test  (priority=2, groups={"smoke"})
+	@Test(priority = 2, groups = { "smoke" })
 	public void Emergency_contact_deleted_succesfully_testcase() throws InterruptedException {
 //    		Login_Page_Action lpa= new Login_Page_Action(ad);
 //    		lpa.validate_login();
@@ -220,23 +220,20 @@ public class Main_Methods extends BrowserFactory {
 //		System.out.println("Emergency_contact_deleted_succesfully_testcase Passed");
 	}
 
-	
-	@Test(priority=3, groups={"smoke"})
-	public void validation_manage_licence_testcase() throws InterruptedException, IOException
-	{
-	
-		Myprofile_Page_Actions mppa= new Myprofile_Page_Actions(ad);
+	@Test // (priority=3, groups={"smoke"})
+	public void validation_manage_licence_testcase() throws InterruptedException, IOException {
+
+		Myprofile_Page_Actions mppa = new Myprofile_Page_Actions(ad);
 		mppa.click_manage_licence();
-		Driving_License_Page_Actions dlpa= new Driving_License_Page_Actions(ad);
+		Driving_License_Page_Actions dlpa = new Driving_License_Page_Actions(ad);
 		dlpa.click_three_dots();
 		dlpa.uploading_new();
 		System.out.println("**********************");
 		System.out.println("validation_manage_licence_testcase Passed");
-		
+
 	}
-	
-	
-	@Test 
+
+	@Test
 	public void Tips_Validation() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -262,7 +259,7 @@ public class Main_Methods extends BrowserFactory {
 		Selected_Vehicle_Page_Actions svpa = new Selected_Vehicle_Page_Actions(ad);
 		svpa.Vehicle_Select();
 		Dashboard_Page_Actions dpa = new Dashboard_Page_Actions(ad);
- //		dpa.Handling_Dashboard_All_Popups();
+		// dpa.Handling_Dashboard_All_Popups();
 		dpa.Services_icon();
 		Vehicle_Service_Page_actions vspa = new Vehicle_Service_Page_actions(ad);
 		vspa.Book_service_button();
@@ -274,7 +271,7 @@ public class Main_Methods extends BrowserFactory {
 		bsscpa.Verifying_service_type();
 		Book_service_selfJobCard_page_actions bssjcpa = new Book_service_selfJobCard_page_actions(ad);
 		bssjcpa.Self_Job_Card_Page();
-		Booking_confirmed_Page_Action bcpa= new Booking_confirmed_Page_Action(ad);
+		Booking_confirmed_Page_Action bcpa = new Booking_confirmed_Page_Action(ad);
 		bcpa.fetching_SR_number();
 		bcpa.click_go_back_to_home();
 		dpa.MenubarList();
@@ -284,12 +281,8 @@ public class Main_Methods extends BrowserFactory {
 		lgpa.click_yes_under_logout();
 		System.out.println("**********************");
 		System.out.println("Bookservice_FSC_testcase Passed");
-		
+
 	}
-	
-	
-	
-	
 
 	@Test // (priority=6, groups={"smoke"})
 	public void Goodlife_Nonmember_Owner_testcase() throws InterruptedException {
