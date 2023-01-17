@@ -11,8 +11,6 @@
 				<include name="smoke" />
 			</run>
 		</groups>
-		
-
 		<classes>
 			<class name="com.oneapp.test_suits.Login_testcases"></class>
 			<class name="com.oneapp.test_suits.GoodLife_testcases"></class>
