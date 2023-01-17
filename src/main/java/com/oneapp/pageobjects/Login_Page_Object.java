@@ -18,8 +18,11 @@ public class Login_Page_Object {
 	@FindBy(id = "com.customerapp.hero:id/text_input_editext")
 	private WebElement mobile_num_field;
 
-	@FindBy(id = "com.customerapp.hero:id/btn_lbl")
+	@FindBy(id = "com.customerapp.hero:id/btn_lay")
 	private WebElement login_btn;
+	
+	@FindBy(xpath="//android.widget.Toast[1]")
+	private WebElement toast_message;
 
 //	@FindBy(id="com.customerapp.hero:id/btn_lay")
 //	private WebElement Mob_num_not_regis;
@@ -74,6 +77,11 @@ public class Login_Page_Object {
 	public List<WebElement> getContact_us_link() {
 		return contact_us_link;
 	}
+
+	public WebElement getToast_message() {
+		return toast_message;
+	}
+
 
 	
 

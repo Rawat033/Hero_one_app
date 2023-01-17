@@ -7,16 +7,14 @@
   <test thread-count="5" name="Main_MethodsTest(failed)">
     <groups>
       <run>
-        <include name="smoke"/>
+        <include name="negative"/>
       </run>
     </groups>
     <classes>
       <class name="com.oneapp.test_suits.Main_Methods">
         <methods>
-          <include name="Emergency_contact_added_succesfully_testcase"/>
           <include name="Browsers_open"/>
-          <include name="validation_manage_licence_testcase"/>
-          <include name="Emergency_contact_deleted_succesfully_testcase"/>
+          <include name="invalid_Login_002"/>
         </methods>
       </class> <!-- com.oneapp.test_suits.Main_Methods -->
     </classes>

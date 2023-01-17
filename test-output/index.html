@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Main_MethodsSuite" class="navigator-link">
-              <span class="suite-name border-passed">Main_MethodsSuite</span>
+            <a href="#" panel-name="suite-LoginSuite" class="navigator-link">
+              <span class="suite-name border-failed">LoginSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Main_MethodsSuite" class="navigator-link ">
-                    <span>D:\JAVA\Eclipse- workspace\oneapp\testng.xml</span>
+                  <a href="#" panel-name="test-xml-LoginSuite" class="navigator-link ">
+                    <span>D:\JAVA\Eclipse- workspace\oneapp\testng1.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Main_MethodsSuite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-LoginSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Main_MethodsSuite" class="navigator-link ">
-                    <span>1 group</span>
+                  <a href="#" panel-name="group-LoginSuite" class="navigator-link ">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Main_MethodsSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-LoginSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Main_MethodsSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-LoginSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Main_MethodsSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-LoginSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Main_MethodsSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-LoginSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,26 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LoginSuite" class="hide-methods failed suite-LoginSuite"> (hide)</a> <!-- hide-methods failed suite-LoginSuite -->
+                      <a href="#" panel-name="suite-LoginSuite" class="show-methods failed suite-LoginSuite"> (show)</a> <!-- show-methods failed suite-LoginSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-LoginSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="com.oneapp.test_suits.Myprofile_testcases" class="method navigator-link" hash-for-method="validate_myprofile_valid_details_testcase400">validate_myprofile_valid_details_testcase400</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LoginSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Main_MethodsSuite" class="hide-methods passed suite-Main_MethodsSuite"> (hide)</a> <!-- hide-methods passed suite-Main_MethodsSuite -->
-                      <a href="#" panel-name="suite-Main_MethodsSuite" class="show-methods passed suite-Main_MethodsSuite"> (show)</a> <!-- show-methods passed suite-Main_MethodsSuite -->
+                      <a href="#" panel-name="suite-LoginSuite" class="hide-methods passed suite-LoginSuite"> (hide)</a> <!-- hide-methods passed suite-LoginSuite -->
+                      <a href="#" panel-name="suite-LoginSuite" class="show-methods passed suite-LoginSuite"> (show)</a> <!-- show-methods passed suite-LoginSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Main_MethodsSuite">
+                    <div class="method-list-content passed suite-LoginSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Emergency_contact_added_succesfully_testcase">Emergency_contact_added_succesfully_testcase</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LoginSuite" title="com.oneapp.test_suits.Login_testcases" class="method navigator-link" hash-for-method="Valid_Login_001">Valid_Login_001</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Main_MethodsSuite" title="com.oneapp.test_suits.Main_Methods" class="method navigator-link" hash-for-method="Emergency_contact_deleted_succesfully_testcase">Emergency_contact_deleted_succesfully_testcase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Main_MethodsSuite -->
+                    </div> <!-- method-list-content passed suite-LoginSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,96 +132,155 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Main_MethodsSuite" class="panel Main_MethodsSuite">
-          <div class="suite-Main_MethodsSuite-class-passed">
+        <div panel-name="suite-LoginSuite" class="panel LoginSuite">
+          <div class="suite-LoginSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.oneapp.test_suits.Main_Methods</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.oneapp.test_suits.Myprofile_testcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Emergency_contact_added_succesfully_testcase">
-                  </a> <!-- Emergency_contact_added_succesfully_testcase -->
-                  <span class="method-name">Emergency_contact_added_succesfully_testcase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Emergency_contact_deleted_succesfully_testcase">
-                  </a> <!-- Emergency_contact_deleted_succesfully_testcase -->
-                  <span class="method-name">Emergency_contact_deleted_succesfully_testcase</span>
+                  <a name="validate_myprofile_valid_details_testcase400">
+                  </a> <!-- validate_myprofile_valid_details_testcase400 -->
+                  <span class="method-name">validate_myprofile_valid_details_testcase400</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-VABRN9M&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, databaseEnabled: false, desired: {appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: UiAutomator2, avd: Pixel_3, avdLaunchTimeout: 400000, deviceName: Pixel 3, newCommandTimeout: 900, platformName: android, readyTimeout: 400000, udid: emulator-5554}, deviceApiLevel: 31, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2160, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 900, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, readyTimeout: 400000, statBarHeight: 66, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1962, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 4cae6e73-ba65-4e0c-9104-344d879b599a
+*** Element info: {Using=id, value=com.customerapp.hero:id/side_menu_btn}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.oneapp.page_actions.Dashboard_Page_Actions.MenubarList(Dashboard_Page_Actions.java:63)
+	at com.oneapp.test_suits.Myprofile_testcases.validate_myprofile_valid_details_testcase400(Myprofile_testcases.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Main_MethodsSuite-class-passed -->
-        </div> <!-- panel Main_MethodsSuite -->
-        <div panel-name="test-xml-Main_MethodsSuite" class="panel">
+          </div> <!-- suite-LoginSuite-class-failed -->
+          <div class="suite-LoginSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.oneapp.test_suits.Login_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Valid_Login_001">
+                  </a> <!-- Valid_Login_001 -->
+                  <span class="method-name">Valid_Login_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginSuite-class-passed -->
+        </div> <!-- panel LoginSuite -->
+        <div panel-name="test-xml-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\JAVA\Eclipse- workspace\oneapp\testng.xml</span>
+            <span class="header-content">D:\JAVA\Eclipse- workspace\oneapp\testng1.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Main_MethodsSuite&quot;&gt;
+&lt;suite name=&quot;LoginSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.oneapp.basic.MyListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Main_MethodsTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;smoke&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.oneapp.test_suits.Main_Methods&quot;/&gt;
+      &lt;class name=&quot;com.oneapp.test_suits.Login_testcases&quot;/&gt;
+      &lt;class name=&quot;com.oneapp.test_suits.GoodLife_testcases&quot;/&gt;
+      &lt;class name=&quot;com.oneapp.test_suits.BookService_testcases&quot;/&gt;
+      &lt;class name=&quot;com.oneapp.test_suits.ManageLicense_testcases&quot;/&gt;
+      &lt;class name=&quot;com.oneapp.test_suits.EmergencyContact_testcases&quot;/&gt;
+      &lt;class name=&quot;com.oneapp.test_suits.Myprofile_testcases&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Main_MethodsTest --&gt;
-&lt;/suite&gt; &lt;!-- Main_MethodsSuite --&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+&lt;/suite&gt; &lt;!-- LoginSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Main_MethodsSuite" class="panel">
+        <div panel-name="testlist-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Main_MethodsSuite</span>
+            <span class="header-content">Tests for LoginSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Main_MethodsTest (1 class)</span>
+                <span class="test-name">LoginTest (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Main_MethodsSuite" class="panel">
+        <div panel-name="group-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Main_MethodsSuite</span>
+            <span class="header-content">Groups for LoginSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">functional</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validate_myprofile_valid_details_testcase400</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">Emergency_contact_added_succesfully_testcase</span>
+                <span class="method-in-group-name">Valid_Login_001</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">Emergency_contact_deleted_succesfully_testcase</span>
+                <span class="method-in-group-name">validate_myprofile_valid_details_testcase400</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Main_MethodsSuite" class="panel">
+        <div panel-name="times-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Main_MethodsSuite</span>
+            <span class="header-content">Times for LoginSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Main_MethodsSuite');
-function tableData_Main_MethodsSuite() {
+suiteTableInitFunctions.push('tableData_LoginSuite');
+function tableData_LoginSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -220,96 +288,126 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Emergency_contact_added_succesfully_testcase')
-data.setCell(0, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(0, 3, 103852);
+data.setCell(0, 1, 'validate_myprofile_valid_details_testcase400')
+data.setCell(0, 2, 'com.oneapp.test_suits.Myprofile_testcases')
+data.setCell(0, 3, 70880);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Emergency_contact_deleted_succesfully_testcase')
-data.setCell(1, 2, 'com.oneapp.test_suits.Main_Methods')
-data.setCell(1, 3, 6602);
-window.suiteTableData['Main_MethodsSuite']= { tableData: data, tableDiv: 'times-div-Main_MethodsSuite'}
+data.setCell(1, 1, 'Valid_Login_001')
+data.setCell(1, 2, 'com.oneapp.test_suits.Login_testcases')
+data.setCell(1, 3, 16269);
+window.suiteTableData['LoginSuite']= { tableData: data, tableDiv: 'times-div-LoginSuite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Main_MethodsSuite">
-              </div> <!-- times-div-Main_MethodsSuite -->
+              <div id="times-div-LoginSuite">
+              </div> <!-- times-div-LoginSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Main_MethodsSuite" class="panel">
+        <div panel-name="reporter-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Main_MethodsSuite</span>
+            <span class="header-content">Reporter output for LoginSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">Emergency_contact_added_succesfully_testcase</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">8130998133</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">Emergency_contact_deleted_succesfully_testcase</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Contact deleted succesfully and now displaying Add Emergency contact</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Main_MethodsSuite" class="panel">
+        <div panel-name="ignored-methods-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">18 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.oneapp.test_suits.Main_Methods</span>
+              <span class="ignored-class-name">com.oneapp.test_suits.BookService_testcases</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Tips_Validation</span>
+                <span class="ignored-method-name">Browsers_open</span>
                 <br/>
-                <span class="ignored-method-name">Valid_Login_001</span>
+                <span class="ignored-method-name">validate_Bookservice_FSC_testcase</span>
                 <br/>
-                <span class="ignored-method-name">Bookservice_FSC_testcase</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.oneapp.test_suits.GoodLife_testcases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validate_Goodlife_Non_member_asOwner_testcase</span>
                 <br/>
-                <span class="ignored-method-name">Contact_Us_005</span>
+                <span class="ignored-method-name">Browsers_open</span>
                 <br/>
-                <span class="ignored-method-name">T_and_C_validation_005</span>
-                <br/>
-                <span class="ignored-method-name">Myprofile_changes_Validation_testcase400</span>
-                <br/>
-                <span class="ignored-method-name">Privacy_validation_004</span>
-                <br/>
-                <span class="ignored-method-name">InValid_Login_002</span>
-                <br/>
-                <span class="ignored-method-name">Verify_OTP_testcase100</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.oneapp.test_suits.ManageLicense_testcases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Browsers_open</span>
                 <br/>
                 <span class="ignored-method-name">validation_manage_licence_testcase</span>
                 <br/>
-                <span class="ignored-method-name">Goodlife_Nonmember_Owner_testcase</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.oneapp.test_suits.EmergencyContact_testcases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validate_emergency_contact_deleted_succesfully_testcase</span>
                 <br/>
-                <span class="ignored-method-name">Mininum_length_field_validation_003</span>
+                <span class="ignored-method-name">Browsers_open</span>
+                <br/>
+                <span class="ignored-method-name">validate_emergency_contact_added_succesfully_testcase</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.oneapp.test_suits.Login_testcases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validation_app_working_expected_after_minimizing</span>
+                <br/>
+                <span class="ignored-method-name">T_and_C_validation_005</span>
+                <br/>
+                <span class="ignored-method-name">Privacy_validation_004</span>
+                <br/>
+                <span class="ignored-method-name">validate_continue_with_no_internet</span>
+                <br/>
+                <span class="ignored-method-name">validation_privacypage_with_no_internet</span>
+                <br/>
+                <span class="ignored-method-name">Contact_Us_005</span>
+                <br/>
+                <span class="ignored-method-name">invalid_Login_002</span>
+                <br/>
+                <span class="ignored-method-name">mininum_length_field_validation_003</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.oneapp.test_suits.Myprofile_testcases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Browsers_open</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Main_MethodsSuite" class="panel">
+        <div panel-name="chronological-LoginSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.oneapp.test_suits.Main_Methods</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">com.oneapp.test_suits.Login_testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <span class="method-name">Browsers_open</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">Emergency_contact_added_succesfully_testcase</span>
-                <span class="method-start">69082 ms</span>
+                <span class="method-name">Valid_Login_001</span>
+                <span class="method-start">15888 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.oneapp.test_suits.Myprofile_testcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Emergency_contact_deleted_succesfully_testcase</span>
-                <span class="method-start">172957 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_myprofile_valid_details_testcase400</span>
+                <span class="method-start">32181 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -34,5 +34,11 @@ public class Menu_Bar_Page_Actions {
 		 mbpo.getLogout_menu_bar_txt().click();
 	 }
 	
+	 public void closing_menubar_icon() throws InterruptedException
+	 {
+		 mbpo.getMenu_bar_close_icon().click();
+		 Thread.sleep(3000);
+	 }
+	
 
 }

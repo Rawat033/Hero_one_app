@@ -20,6 +20,7 @@ import org.testng.asserts.SoftAssert;
 import com.google.common.io.Files;
 import com.oneapp.basic.Create_Driver_Session;
 import com.oneapp.basic.ExcelData;
+import com.oneapp.basic.Generic;
 import com.oneapp.pageobjects.Contact_Us_page_object;
 import com.oneapp.pageobjects.Login_Page_Object;
 import com.oneapp.pageobjects.Privacy_Policy_Page_Object;
@@ -50,23 +51,33 @@ public class Login_Page_Action {
 //	String mob_num = "8800996793";
 //	String mob_num1 = "995859217";
 	
-	public void WifiOff() {
-	    ConnectionState state = ad.setConnection(new ConnectionStateBuilder().withWiFiDisabled().build());
-	    Assert.assertFalse(state.isWiFiEnabled(), "Wifi is not switched off");
-	    Reporter.log("WiFi turned off");
-	} 
-	
-	public void WifiOn() {
-	    ConnectionState state = ad.setConnection(new ConnectionStateBuilder().withWiFiEnabled().build());
-	    Assert.assertTrue(state.isWiFiEnabled(), "Wifi is not switched on");
-	    Reporter.log("WiFi turned on");
-	}
-	
-	public void Run_app_in_background() throws InterruptedException
+	public void Swipe_Login_page() throws InterruptedException
 	{
-		((AndroidDriver)ad).runAppInBackground(Duration.ofSeconds(15));
-		Thread.sleep(5000);
+		ta = new TouchAction(ad);
+		Thread.sleep(12000);
+
+		ta.press(PointOption.point(573, 1618)).moveTo(PointOption.point(569, 1126))
+				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).release().perform();
+		Thread.sleep(7000);
 	}
+	
+//	public void WifiOff() {
+//	    ConnectionState state = ad.setConnection(new ConnectionStateBuilder().withWiFiDisabled().build());
+//	    Assert.assertFalse(state.isWiFiEnabled(), "Wifi is not switched off");
+//	    Reporter.log("WiFi turned off");
+//	} 
+//	
+//	public void WifiOn() {
+//	    ConnectionState state = ad.setConnection(new ConnectionStateBuilder().withWiFiEnabled().build());
+//	    Assert.assertTrue(state.isWiFiEnabled(), "Wifi is not switched on");
+//	    Reporter.log("WiFi turned on");
+//	}
+//	
+//	public void Run_app_in_background() throws InterruptedException
+//	{
+//		((AndroidDriver)ad).runAppInBackground(Duration.ofSeconds(15));
+//		Thread.sleep(5000);
+//	}
 
 	public Login_Page_Action(AndroidDriver ad) {
 		this.ad = ad;
@@ -98,11 +109,11 @@ public class Login_Page_Action {
 //		System.out.println(ad.isDeviceLocked());
 //		ad.unlockDevice();
 //		Thread.sleep(5000);
-		ta = new TouchAction(ad);
+//		ta = new TouchAction(ad);
 		String actuallogo = lpo.getHerologo().getText();
 		String Expectedlogo = "Login";
 		Assert.assertEquals(actuallogo, Expectedlogo);
-		System.out.println("My Validation has passed");
+//		System.out.println("My Validation has passed");
 		System.out.println(lpo.getHerologo().getText());
 		WebElement mob_num = lpo.getMobile_num_field();
 		mob_num.clear();
@@ -128,6 +139,10 @@ public class Login_Page_Action {
 		Thread.sleep(10000);
 	//	ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
 		lpo.getlogin_btn().click();
+		String expected_toast_message = "Mobile Number is not registered";
+		String actual_toast_message	=lpo.getToast_message().getAttribute("name");
+		System.out.println(actual_toast_message);
+		Assert.assertEquals(expected_toast_message, actual_toast_message);
 	}
 
 	public void Mininum_length_field() throws InterruptedException {
@@ -139,30 +154,29 @@ public class Login_Page_Action {
 		if (exceldata.getStringData("Login Page",2,0).contains("9958")) {
 			Thread.sleep(3000);
 			boolean enabl_btn = lpo.getlogin_btn().isEnabled();
-			System.out.println("Button is disabled "+ enabl_btn);
+			System.out.println("Button is disabled ---->"+ enabl_btn);
 		}
 
 		else {
 			System.out.println("button is still enable and my test is getting failed");
 			Thread.sleep(2000);
-	//		ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
 			lpo.getlogin_btn().click();
 		}
-
-//    Thread.sleep(2000);
-//    ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(538, 1831))).perform();
-
 	}
-
-	public void Swipe_Login_page() throws InterruptedException
-	{
-		ta = new TouchAction(ad);
-		Thread.sleep(12000);
-
-		ta.press(PointOption.point(573, 1618)).moveTo(PointOption.point(569, 1126))
-				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).release().perform();
-		Thread.sleep(7000);
-	}
+	
+	public void continue_with_no_internet()
+    {
+		WebElement mob_num = lpo.getMobile_num_field();
+		mob_num.clear();
+		mob_num.sendKeys(exceldata.getStringData("Login Page", 0, 0));
+		Generic.WifiOff();
+		lpo.getlogin_btn().click();
+		String expected_toast_message = "Please check your network connection.";
+		String actual_toast_message	=lpo.getToast_message().getAttribute("name");
+		System.out.println(actual_toast_message);
+		Assert.assertEquals(expected_toast_message, actual_toast_message);
+		Generic.WifiOn();
+    }
 	
 
 	public void Privacypage() throws InterruptedException {
@@ -176,6 +190,15 @@ public class Login_Page_Action {
 		System.out.println("HOGYA");
 		boolean Privacy_displaying = get_privacy_text.isDisplayed();
 		System.out.println(Privacy_displaying);
+	}
+	
+	public void Privacypage_with_no_internet() throws InterruptedException {
+		ta.tap(TapOptions.tapOptions().withElement(ElementOption.element(lpo.getPrivacylink().get(7)))).perform();
+		System.out.println("Privacy gets clicked");
+		Generic.WifiOff();
+		Thread.sleep(3000);
+//		System.out.println("HOGYA");
+		Generic.WifiOn();
 	}
 	
 	public void Terms_and_Conditionspage() throws InterruptedException
@@ -202,6 +225,11 @@ public class Login_Page_Action {
 		boolean Contact_us_displaying = get_contact_us_text.isDisplayed();
 		System.out.println(Contact_us_displaying);
 		
+	}
+	
+	public void App_minimizing_after_loggedin() throws InterruptedException
+	{
+		Generic.Run_app_in_background();	
 	}
 	
  

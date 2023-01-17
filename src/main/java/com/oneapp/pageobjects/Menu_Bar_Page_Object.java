@@ -19,6 +19,10 @@ public class Menu_Bar_Page_Object {
 	private WebElement logout_menu_bar_txt;
 	
 
+	@FindBy(id = "com.customerapp.hero:id/cross")
+	private WebElement menu_bar_close_icon;
+	
+	
 	public Menu_Bar_Page_Object(AndroidDriver ad) {
 
 		PageFactory.initElements(ad, this);
@@ -39,6 +43,14 @@ public class Menu_Bar_Page_Object {
 	public WebElement getLogout_menu_bar_txt() {
 		return logout_menu_bar_txt;
 	}
+
+
+	public WebElement getMenu_bar_close_icon() {
+		return menu_bar_close_icon;
+	}
+
+
+	
 
 
 	

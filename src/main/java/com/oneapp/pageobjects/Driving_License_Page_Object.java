@@ -34,7 +34,11 @@ public class Driving_License_Page_Object {
 	@FindBy(id = "com.customerapp.hero:id/crop_image_menu_crop")
 	private WebElement crop_image;
 	
+	@FindBy(id = "com.customerapp.hero:id/back_btn")
+	private WebElement back_btn;
 	
+	
+
 	
 	public Driving_License_Page_Object(AndroidDriver ad) {
 
@@ -90,6 +94,15 @@ public class Driving_License_Page_Object {
 	public WebElement getCrop_image() {
 		return crop_image;
 	}
+
+
+
+
+	public WebElement getBack_btn() {
+		return back_btn;
+	}
+
+
 
 
 

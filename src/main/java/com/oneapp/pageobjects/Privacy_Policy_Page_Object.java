@@ -17,6 +17,11 @@ public class Privacy_Policy_Page_Object {
 	})
 	private List<WebElement> privacytext_val;
 	
+	
+	@FindBy (xpath="//*[@text='Webpage not available']")
+	private WebElement webpage_not_available_text;
+	
+	
 	public Privacy_Policy_Page_Object(AndroidDriver ad) {
 
 		PageFactory.initElements(ad, this);
@@ -26,6 +31,12 @@ public class Privacy_Policy_Page_Object {
 	public List<WebElement> getPrivacytext_val() {
 		return privacytext_val;
 	}
+
+	public WebElement getWebpage_not_available_text() {
+		return webpage_not_available_text;
+	}
+
+	
 	
 	
 	

@@ -34,8 +34,7 @@ public AndroidDriver ad;
 		opo.getFourthtxtbox().sendKeys("4");
 		opo.getFifthtxtbox().sendKeys("5");
 		opo.getSixthtxtbox().sendKeys("6");
-		
-
+	
 		 opo.getVerifybtn().click();
 		 System.out.println("I get the vehicle selected page");
 		
@@ -46,6 +45,7 @@ public AndroidDriver ad;
 		 opo.getEdit_button().click();
 	 }
 	
+	 
 	
 	
 }

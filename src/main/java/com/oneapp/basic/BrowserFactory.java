@@ -44,7 +44,7 @@ public class BrowserFactory {
 
 //	@Parameters({ "PLATFORM_NAME", "DEVICE_NAME", "AUTOMATION_NAME", "UDID" })
 	
-	 @BeforeClass(alwaysRun = true)
+	 @BeforeSuite(alwaysRun = true)
 	public void Browsers_open() throws MalformedURLException {
 
 		// This is origional
