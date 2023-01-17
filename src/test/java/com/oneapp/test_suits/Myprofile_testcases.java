@@ -17,7 +17,7 @@ import com.oneapp.page_actions.Selected_Vehicle_Page_Actions;
 
 public class Myprofile_testcases extends BrowserFactory{
 	
-	@Test // (priority=2, groups={"smoke","functional"})
+	@Test  (priority=2, groups={"smoke","functional"})
 	public void validate_myprofile_valid_details_testcase400() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -27,7 +27,7 @@ public class Myprofile_testcases extends BrowserFactory{
 		Selected_Vehicle_Page_Actions svpa = new Selected_Vehicle_Page_Actions(ad);
 		svpa.Vehicle_Select();
 		Dashboard_Page_Actions dpa = new Dashboard_Page_Actions(ad);
-//		dpa.Handling_Dashboard_All_Popups();
+		dpa.Handling_Dashboard_All_Popups();
 		dpa.MenubarList();
 		Menu_Bar_Page_Actions mbpa = new Menu_Bar_Page_Actions(ad);
 		mbpa.Myprofile_Menu_bar();
