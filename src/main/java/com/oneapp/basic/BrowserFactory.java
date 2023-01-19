@@ -46,7 +46,7 @@ public class BrowserFactory {
 	
 	 @BeforeSuite(alwaysRun = true)
 	public void Browsers_open() throws MalformedURLException {
-
+		 
 		// This is origional
 		ad = Create_Driver_Session.Androidsession("Android");
 //		ad.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);

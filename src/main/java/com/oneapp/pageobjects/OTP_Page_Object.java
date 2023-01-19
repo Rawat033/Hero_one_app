@@ -32,6 +32,14 @@ public class OTP_Page_Object {
 	@FindBy(id="com.customerapp.hero:id/edit_phn_no_btn")
 	private WebElement edit_button;
 	
+	@FindBy(xpath="//android.widget.Toast[1]")
+	private WebElement toast_message;
+	
+	
+	@FindBy(id="com.customerapp.hero:id/resend_btn_lbl")
+	private WebElement resend_link;
+	
+	
 	public OTP_Page_Object(AndroidDriver ad)
 	{
 		
@@ -70,7 +78,15 @@ public class OTP_Page_Object {
 	public WebElement getEdit_button() {
 		return edit_button;
 	}
-	
+
+	public WebElement getToast_message() {
+		return toast_message;
+	}
+
+	public WebElement getResend_link() {
+		return resend_link;
+	}
+
 	
 	
 	

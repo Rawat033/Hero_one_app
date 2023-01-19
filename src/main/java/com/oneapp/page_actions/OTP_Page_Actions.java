@@ -2,6 +2,7 @@ package com.oneapp.page_actions;
 
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.oneapp.basic.Create_Driver_Session;
 import com.oneapp.pageobjects.Login_Page_Object;
@@ -35,9 +36,30 @@ public AndroidDriver ad;
 		opo.getFifthtxtbox().sendKeys("5");
 		opo.getSixthtxtbox().sendKeys("6");
 	
+	}
+	
+	public void invalid_Validate_OTP()
+	{
+		opo.getFirsttxtbox().sendKeys("1");
+		opo.getSecondtxtbox().sendKeys("2");
+		opo.getThirdtxtbox().sendKeys("3");
+		opo.getFourthtxtbox().sendKeys("4");
+		opo.getFifthtxtbox().sendKeys("5");
+		opo.getSixthtxtbox().sendKeys("8");
+	
+	}
+	
+	public void Click_verify_button()
+	 {
 		 opo.getVerifybtn().click();
-		 System.out.println("I get the vehicle selected page");
-		
+	 }
+	
+	public void assertion_invalid_OTP()
+	{
+		 String expected_toast_message = "Invalid Otp";
+			String actual_toast_message	=opo.getToast_message().getAttribute("name");
+//			System.out.println(actual_toast_message);
+			Assert.assertEquals(expected_toast_message, actual_toast_message);
 	}
 	
 	 public void Click_edit()
@@ -45,7 +67,11 @@ public AndroidDriver ad;
 		 opo.getEdit_button().click();
 	 }
 	
-	 
+	 public void click_resend_link() throws InterruptedException
+	 {
+		 opo.getResend_link().click();
+		 Thread.sleep(3000);
+	 }
 	
 	
 }

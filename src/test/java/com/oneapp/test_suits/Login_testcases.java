@@ -15,7 +15,7 @@ import com.oneapp.page_actions.Privacy_policy_Page_action;
 
 public class Login_testcases extends BrowserFactory {
 	
-	@Test (priority = 1, groups = { "smoke" })
+	@Test// (priority = 1, groups = { "smoke" })
 	public void Valid_Login_001() throws InterruptedException, IOException {
 		System.out.println(ad.getSessionId());
 		Login_Page_Action lpa = new Login_Page_Action(ad);

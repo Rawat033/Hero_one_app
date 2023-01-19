@@ -9,9 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class Login_Page_Object {
 
+	
 	@FindBy(id = "com.customerapp.hero:id/lbl1")
 	private WebElement herologo;
 

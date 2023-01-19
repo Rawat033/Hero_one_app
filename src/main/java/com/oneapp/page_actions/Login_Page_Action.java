@@ -121,7 +121,7 @@ public class Login_Page_Action {
 		lpo.getlogin_btn().click();
 	//	ad.findElementByXPath("//*[@text='Continue']").click();
 		Thread.sleep(5000);
-		
+//		exceldata.WriteExceldata("SR_ID","Kilometers", "RSRB-1023_RSRB-123");
 	}
 
 	public void Invalidate_login() throws InterruptedException {

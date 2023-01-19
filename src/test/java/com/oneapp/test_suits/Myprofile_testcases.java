@@ -21,7 +21,6 @@ public class Myprofile_testcases extends BrowserFactory{
 	public void validate_myprofile_valid_details_testcase400() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
-		System.out.println("OTP page");
 		OTP_Page_Actions opa = new OTP_Page_Actions(ad);
 		opa.Validate_OTP();
 		Selected_Vehicle_Page_Actions svpa = new Selected_Vehicle_Page_Actions(ad);
