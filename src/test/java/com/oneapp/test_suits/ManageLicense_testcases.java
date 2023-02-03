@@ -14,7 +14,7 @@ import com.oneapp.page_actions.Myprofile_Page_Actions;
 
 public class ManageLicense_testcases extends BrowserFactory {
 	
-	@Test // (priority=5, groups={"smoke"})
+	@Test //(priority = 6, groups = { "smoke" })
 	public void validation_manage_licence_testcase() throws InterruptedException, IOException {
 
 		Myprofile_Page_Actions mppa = new Myprofile_Page_Actions(ad);
@@ -28,7 +28,7 @@ public class ManageLicense_testcases extends BrowserFactory {
 		mppa.click_back_icon();
 		Menu_Bar_Page_Actions mbpa=new Menu_Bar_Page_Actions(ad);
 		mbpa.closing_menubar_icon();
-
+		
 	}
 
 }

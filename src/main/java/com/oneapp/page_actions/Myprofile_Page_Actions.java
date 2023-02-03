@@ -39,7 +39,9 @@ public class Myprofile_Page_Actions {
 
 	{
 		mppo.getMoredetails_link().click();
+		
 		String expected_address = "f30 mumbai bandra east";
+		
 		if (mppo.getAddress_val().getText().equalsIgnoreCase(expected_address)) {
 			Assert.assertEquals(mppo.getAddress_val().getText(), expected_address);
 			Reporter.log("AFTER SAVING MY PROFILE DETAILS", true);
@@ -50,7 +52,7 @@ public class Myprofile_Page_Actions {
 		}
 
 		else {
-			Reporter.log("Adress field is blank", true);
+			Reporter.log("Adsress field is blank", true);
 		}
 
 	}

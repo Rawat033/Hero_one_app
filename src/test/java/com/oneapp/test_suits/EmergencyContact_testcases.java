@@ -17,17 +17,19 @@ import com.oneapp.page_actions.Selected_Vehicle_Page_Actions;
 
 public class EmergencyContact_testcases extends BrowserFactory {
 
-	@Test //(priority = 3, groups = { "smoke" })
+	@Test //(priority = 4, groups = { "smoke" })
 	public void validate_emergency_contact_added_succesfully_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
 		System.out.println("OTP page");
 		OTP_Page_Actions opa = new OTP_Page_Actions(ad);
 		opa.Validate_OTP();
+		opa.Click_verify_button();
 		Selected_Vehicle_Page_Actions svpa = new Selected_Vehicle_Page_Actions(ad);
+		svpa.Assertion_selected_vehicle_page();
 		svpa.Vehicle_Select();
 		Dashboard_Page_Actions dpa = new Dashboard_Page_Actions(ad);
-	//	dpa.Handling_Dashboard_All_Popups();
+//		dpa.Handling_Dashboard_All_Popups();
 		dpa.MenubarList();
 		Menu_Bar_Page_Actions mbpa = new Menu_Bar_Page_Actions(ad);
 		mbpa.Myprofile_Menu_bar();
@@ -43,7 +45,7 @@ public class EmergencyContact_testcases extends BrowserFactory {
 
 	}
 
-	@Test //(priority = 4, groups = { "smoke" })
+	@Test //(priority = 5, groups = { "smoke" })
 	public void validate_emergency_contact_deleted_succesfully_testcase() throws InterruptedException {
 //    		Login_Page_Action lpa= new Login_Page_Action(ad);
 //    		lpa.validate_login();
@@ -72,4 +74,29 @@ public class EmergencyContact_testcases extends BrowserFactory {
 //		System.out.println("**********************");
 //		System.out.println("Emergency_contact_deleted_succesfully_testcase Passed");
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

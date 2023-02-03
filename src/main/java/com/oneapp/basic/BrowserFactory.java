@@ -14,6 +14,8 @@ import org.apache.commons.io.FileUtils;
 import org.bson.internal.Base64;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -35,9 +37,11 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
 
+	public static WebDriver driver;
 	public static AndroidDriver ad;// Global AndroidDriver
 	public static ExtentTest extentTest;
 
@@ -58,6 +62,22 @@ public class BrowserFactory {
 //            	Reporter.log("Android emulator gets opened", true);
 
 	}
+	 
+	 
+		private static String RTDataPortal_Url="https://202.56.244.135/siebel/app/edealer/enu?SWECmd=Start&SWEHo=202.56.244.135"; 
+		public static WebDriver launch_Browser(WebDriver driver)
+		{
+		
+			System.setProperty("webdriver.chrome.driver", "./myfiles/chromedriver.exe");
+			//WebDriver driver = new ChromeDriver();
+			driver= new ChromeDriver();
+			
+			driver.navigate().to(RTDataPortal_Url);
+			
+			return driver;
+		}
+	 
+	 
 
 //	 @AfterMethod(alwaysRun = true)
 //	public void Browsers_teardown(ITestResult result) 

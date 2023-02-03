@@ -3,20 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.oneapp.test_suits.Login_testcases">
+      <class name="com.oneapp.test_suits.Myprofile_testcases">
         <methods>
-          <include name="T_and_C_validation_005"/>
-          <include name="validation_app_working_expected_after_minimizing"/>
-          <include name="Privacy_validation_004"/>
-          <include name="Valid_Login_001"/>
-          <include name="validate_continue_with_no_internet"/>
+          <include name="Validate_saving_with_blank_fullName_field"/>
           <include name="Browsers_open"/>
-          <include name="validation_privacypage_with_no_internet"/>
-          <include name="Contact_Us_005"/>
-          <include name="invalid_Login_002"/>
-          <include name="mininum_length_field_validation_003"/>
+          <include name="validate_myprofile_valid_details_testcase400"/>
         </methods>
-      </class> <!-- com.oneapp.test_suits.Login_testcases -->
+      </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
