@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.oneapp.test_suits.Myprofile_testcases">
+      <class name="com.oneapp.test_suits.ManageLicense_testcases">
         <methods>
-          <include name="Validate_saving_with_blank_fullName_field"/>
           <include name="Browsers_open"/>
-          <include name="validate_myprofile_valid_details_testcase400"/>
+          <include name="validation_manage_licence_testcase"/>
         </methods>
-      </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
+      </class> <!-- com.oneapp.test_suits.ManageLicense_testcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

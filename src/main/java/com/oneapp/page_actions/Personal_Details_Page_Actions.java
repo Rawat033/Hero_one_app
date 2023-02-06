@@ -71,6 +71,7 @@ public class Personal_Details_Page_Actions {
 		pdpo.getEmailfield().sendKeys("gunjanrawat" + randomInt + "@gmail.com");
 
 		System.out.println("*************************************");
+		Generic.swiping(534, 1349, 538, 792, 4000);
 		Thread.sleep(4000);
 //		ta.press(PointOption.point(466, 1626)).moveTo(PointOption.point(477, 781))
 //				.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).release().perform();
@@ -86,9 +87,12 @@ public class Personal_Details_Page_Actions {
 
 	public void Date_field() throws InterruptedException {
 		WebElement date = pdpo.getDatefield();
-		date.click();
+//		date.click();
+//		ta.tap(PointOption.point(931,717)).perform();
+		 ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(815,1319))).perform();
+		 Thread.sleep(3000);
 		pdpo.getEdit_under_date_field().click();
-		Generic.sendkeys_element(pdpo.getEditing_date(), "1/2/02");
+		Generic.sendkeys_element(pdpo.getEditing_date(), "1/2/01");
 		pdpo.getOk_text().click();
 		Thread.sleep(3000);
 	}
@@ -96,13 +100,15 @@ public class Personal_Details_Page_Actions {
 	public void invalid_date() throws InterruptedException {
 		WebElement date = pdpo.getDatefield();
 		date.click();
+		Thread.sleep(3000);
 		pdpo.getEdit_under_date_field().click();
 		Generic.sendkeys_element(pdpo.getEditing_date(), "1/2/23");
 		pdpo.getOk_text().click();
 		Thread.sleep(3000);
 	}
 
-	public void Address_field() {
+	public void Address_field() throws InterruptedException {
+		Generic.swiping(466, 1626, 477, 781, 4000);
 		WebElement address = pdpo.getAddress_field();
 		address.clear();
 	}
@@ -116,8 +122,9 @@ public class Personal_Details_Page_Actions {
 	}
 
 	public void Pincode_field() throws InterruptedException {
-		Generic.swiping(534, 1349, 538, 792, 4000);
-		Generic.swiping(466, 1626, 477, 781, 4000);
+		
+//		Generic.swiping(534, 1349, 538, 792, 4000);
+//		Generic.swiping(466, 1626, 477, 781, 4000);
 		WebElement pincode = pdpo.getPincode_field();
 		pincode.clear();
 
@@ -125,13 +132,13 @@ public class Personal_Details_Page_Actions {
 
 	public void enter_pincode() throws InterruptedException {
 		Generic.sendkeys_element(pdpo.getPincode_field(), "110091");
-		Thread.sleep(2000);
+	
 	}
 
 	public void enter_invalid_pincode() throws InterruptedException {
-		Thread.sleep(2000);
+		
 		Generic.sendkeys_element(pdpo.getPincode_field(), "000000");
-		Thread.sleep(2000);
+		
 	}
 
 	public void click_Save_button() throws InterruptedException {

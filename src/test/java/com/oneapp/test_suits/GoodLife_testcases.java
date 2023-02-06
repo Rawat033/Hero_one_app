@@ -14,7 +14,7 @@ import com.oneapp.page_actions.Goodlife_Select_Your_Plan_Page_Action;
 
 public class GoodLife_testcases extends BrowserFactory {
 	
-	@Test // (priority = 8, groups = { "smoke" })
+	@Test (priority = 6, groups = { "smoke" })
 	public void validate_Goodlife_Non_member_asOwner_testcase() throws InterruptedException {
 //		Login_Page_Action lpa = new Login_Page_Action(ad);
 //		lpa.validate_login();

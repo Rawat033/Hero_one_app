@@ -26,13 +26,13 @@ public class Create_Driver_Session {
 		
 //	    For Android Emulator
 		dcap.setCapability(MobileCapabilityType.PLATFORM_NAME, BrowserName);
-		dcap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3");
-		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+		dcap.setCapability(MobileCapabilityType.DEVICE_NAME, "pixel 3");
+		dcap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		dcap.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-		dcap.setCapability("avd", "Pixel_3");
-		dcap.setCapability("avdLaunchTimeout", 400000);
-		dcap.setCapability("readyTimeout", 400000);
-		dcap.setCapability("newCommandTimeout", 900);
+		dcap.setCapability("appium:avd", "pixel_3");
+		dcap.setCapability("appium:avdLaunchTimeout", 400000);
+		dcap.setCapability("appium:readyTimeout", 400000);
+		dcap.setCapability("appium:newCommandTimeout", 900);
 		
 		
 //		for unlocking device
@@ -50,7 +50,10 @@ public class Create_Driver_Session {
 //		dcap.setCapability("appPackage", "com.customerapp.hero");
 //		dcap.setCapability("appActivity", "com.customerapp.hero.views.activity.splash.SplashActivity");
 
-		URL url = new URL("http://0.0.0.0:4723/wd/hub");
+//		URL url = new URL("http://0.0.0.0:4723/wd/hub");
+		
+		URL url = new URL("http://127.0.0.1:4723");
+		
 
 		// AndroidDriver ad= new AndroidDriver(url, dcap);
 

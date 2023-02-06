@@ -7,16 +7,16 @@
   <test thread-count="5" name="LoginTest(failed)">
     <groups>
       <run>
-        <include name="negative"/>
+        <include name="smoke"/>
       </run>
     </groups>
     <classes>
-      <class name="com.oneapp.test_suits.Myprofile_testcases">
+      <class name="com.oneapp.test_suits.ManageLicense_testcases">
         <methods>
           <include name="Browsers_open"/>
-          <include name="validate_myprofile_valid_details_testcase400"/>
+          <include name="validation_manage_licence_testcase"/>
         </methods>
-      </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
+      </class> <!-- com.oneapp.test_suits.ManageLicense_testcases -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [LoginSuite] -->

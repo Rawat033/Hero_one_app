@@ -32,7 +32,7 @@ public class Booking_confirmed_Page_Action {
 		Thread.sleep(10000);
 	}
 	
-	public static void RT_portal(WebDriver driver) throws InterruptedException
+	/*public static void RT_portal(WebDriver driver) throws InterruptedException
 	{
 		com.oneapp.base.BaseClass_Webdriver.launch_Browser(driver);
 		com.oneapp.test_layer.Login_Page_Test.Valid_Login(driver);
@@ -40,5 +40,5 @@ public class Booking_confirmed_Page_Action {
 		com.oneapp.object_repo.Search_Bar.find(driver);
 		com.oneapp.object_repo.Search_result.Siebel_Find(driver);
 	}
-	
+	*/
 }

@@ -8,7 +8,7 @@
 
 		<groups>
 			<run>
-				<include name="negative"/>
+				<include name="smoke"/>
 			</run>
 		</groups>
 		

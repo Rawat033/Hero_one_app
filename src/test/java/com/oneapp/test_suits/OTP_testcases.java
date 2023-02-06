@@ -18,7 +18,7 @@ import com.oneapp.page_actions.Selected_Vehicle_Page_Actions;
 
 public class OTP_testcases extends BrowserFactory {
 	
-	@Test // (priority = 2, groups = { "smoke" })
+	@Test  (priority = 1, groups = { "smoke" })
 	public void validate_OTP_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -37,7 +37,7 @@ public class OTP_testcases extends BrowserFactory {
 		Logout_Page_Actions lgpa = new Logout_Page_Actions(ad);
 		lgpa.click_yes_under_logout();
 		System.out.println("**********************");
-		System.out.println("Verify_OTP_testcase100 Passed");
+		System.out.println("Validate_OTP_testcase100 Passed");
 	}
 	
 	
