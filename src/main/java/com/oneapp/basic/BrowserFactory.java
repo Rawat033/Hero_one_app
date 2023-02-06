@@ -37,7 +37,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
 
