@@ -1,2 +1,7 @@
-com\oneapp\test_suits\MY_MIMI.class
-com\oneapp\test_suits\Main_Methods.class
+com\oneapp\test_suits\Myprofile_testcases.class
+com\oneapp\test_suits\BookService_testcases.class
+com\oneapp\test_suits\ManageLicense_testcases.class
+com\oneapp\test_suits\GoodLife_testcases.class
+com\oneapp\test_suits\EmergencyContact_testcases.class
+com\oneapp\test_suits\OTP_testcases.class
+com\oneapp\test_suits\Login_testcases.class
