@@ -1,36 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="13" passed="1" failed="0" skipped="0">
+<testng-results ignored="26" total="32" passed="6" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Android emulator gets opened]]>
     </line>
     <line>
-      <![CDATA[Location popup is displaying]]>
+      <![CDATA[Profile Details]]>
+    </line>
+    <line>
+      <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
+    </line>
+    <line>
+      <![CDATA[f30 mumbai bandra east]]>
+    </line>
+    <line>
+      <![CDATA[Female]]>
+    </line>
+    <line>
+      <![CDATA[8130998133]]>
+    </line>
+    <line>
+      <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-08T18:40:33 IST" name="Main_MethodsSuite" finished-at="2023-01-08T18:42:19 IST" duration-ms="106227">
+  <suite started-at="2023-02-06T15:48:35 IST" name="LoginSuite" finished-at="2023-02-06T15:54:50 IST" duration-ms="375020">
     <groups>
       <group name="smoke">
-        <method signature="Main_Methods.Verify_OTP_100()[pri:1, instance:com.oneapp.test_suits.Main_Methods@456d6c1e]" name="Verify_OTP_100" class="com.oneapp.test_suits.Main_Methods"/>
+        <method signature="OTP_testcases.validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@205d38da]" name="validate_OTP_testcase" class="com.oneapp.test_suits.OTP_testcases"/>
+        <method signature="Myprofile_testcases.validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@6950ed69]" name="validate_myprofile_valid_details_testcase400" class="com.oneapp.test_suits.Myprofile_testcases"/>
+        <method signature="EmergencyContact_testcases.validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" name="validate_emergency_contact_added_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
+        <method signature="EmergencyContact_testcases.validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" name="validate_emergency_contact_deleted_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
+        <method signature="ManageLicense_testcases.validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@6f3187b0]" name="validation_manage_licence_testcase" class="com.oneapp.test_suits.ManageLicense_testcases"/>
+        <method signature="GoodLife_testcases.validate_Goodlife_Non_member_asOwner_testcase()[pri:6, instance:com.oneapp.test_suits.GoodLife_testcases@48b67364]" name="validate_Goodlife_Non_member_asOwner_testcase" class="com.oneapp.test_suits.GoodLife_testcases"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-01-08T18:40:33 IST" name="Main_MethodsTest" finished-at="2023-01-08T18:42:19 IST" duration-ms="106227">
-      <class name="com.oneapp.test_suits.Main_Methods">
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Main_Methods@456d6c1e]" started-at="2023-01-08T18:40:33 IST" name="Browsers_open" finished-at="2023-01-08T18:41:03 IST" duration-ms="30057" status="PASS">
+    <test started-at="2023-02-06T15:48:35 IST" name="LoginTest" finished-at="2023-02-06T15:54:50 IST" duration-ms="375020">
+      <class name="com.oneapp.test_suits.GoodLife_testcases">
+        <test-method signature="validate_Goodlife_Non_member_asOwner_testcase()[pri:6, instance:com.oneapp.test_suits.GoodLife_testcases@48b67364]" started-at="2023-02-06T15:54:13 IST" name="validate_Goodlife_Non_member_asOwner_testcase" finished-at="2023-02-06T15:54:50 IST" duration-ms="36772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Goodlife_Non_member_asOwner_testcase -->
+      </class> <!-- com.oneapp.test_suits.GoodLife_testcases -->
+      <class name="com.oneapp.test_suits.EmergencyContact_testcases">
+        <test-method signature="validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" started-at="2023-02-06T15:52:10 IST" name="validate_emergency_contact_added_succesfully_testcase" finished-at="2023-02-06T15:53:28 IST" duration-ms="77738" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[8130998133]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validate_emergency_contact_added_succesfully_testcase -->
+        <test-method signature="validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" started-at="2023-02-06T15:53:28 IST" name="validate_emergency_contact_deleted_succesfully_testcase" finished-at="2023-02-06T15:53:34 IST" duration-ms="6130" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validate_emergency_contact_deleted_succesfully_testcase -->
+      </class> <!-- com.oneapp.test_suits.EmergencyContact_testcases -->
+      <class name="com.oneapp.test_suits.OTP_testcases">
+        <test-method signature="validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@205d38da]" started-at="2023-02-06T15:48:35 IST" name="validate_OTP_testcase" finished-at="2023-02-06T15:49:57 IST" duration-ms="81901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_OTP_testcase -->
+      </class> <!-- com.oneapp.test_suits.OTP_testcases -->
+      <class name="com.oneapp.test_suits.Myprofile_testcases">
+        <test-method signature="validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@6950ed69]" started-at="2023-02-06T15:49:57 IST" name="validate_myprofile_valid_details_testcase400" finished-at="2023-02-06T15:52:10 IST" duration-ms="133457" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Profile Details]]>
+            </line>
+            <line>
+              <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
+            </line>
+            <line>
+              <![CDATA[f30 mumbai bandra east]]>
+            </line>
+            <line>
+              <![CDATA[Female]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validate_myprofile_valid_details_testcase400 -->
+      </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
+      <class name="com.oneapp.test_suits.Login_testcases">
+        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Login_testcases@7ba8c737]" started-at="2023-02-06T15:48:14 IST" name="Browsers_open" finished-at="2023-02-06T15:48:35 IST" duration-ms="21007" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Android emulator gets opened]]>
             </line>
           </reporter-output>
         </test-method> <!-- Browsers_open -->
-        <test-method signature="Verify_OTP_100()[pri:1, instance:com.oneapp.test_suits.Main_Methods@456d6c1e]" started-at="2023-01-08T18:41:03 IST" name="Verify_OTP_100" finished-at="2023-01-08T18:42:19 IST" duration-ms="76047" status="PASS">
+      </class> <!-- com.oneapp.test_suits.Login_testcases -->
+      <class name="com.oneapp.test_suits.ManageLicense_testcases">
+        <test-method signature="validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@6f3187b0]" started-at="2023-02-06T15:53:34 IST" name="validation_manage_licence_testcase" finished-at="2023-02-06T15:54:13 IST" duration-ms="38907" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Location popup is displaying]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Verify_OTP_100 -->
-      </class> <!-- com.oneapp.test_suits.Main_Methods -->
-    </test> <!-- Main_MethodsTest -->
-  </suite> <!-- Main_MethodsSuite -->
+        </test-method> <!-- validation_manage_licence_testcase -->
+      </class> <!-- com.oneapp.test_suits.ManageLicense_testcases -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- LoginSuite -->
 </testng-results>

@@ -86,7 +86,10 @@
 			<version>2.11.0</version>
 		</dependency>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/Gunjan_test_2
 	</dependencies>
 
 
