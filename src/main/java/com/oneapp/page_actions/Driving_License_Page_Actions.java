@@ -41,8 +41,8 @@ public class Driving_License_Page_Actions {
 		 Thread.sleep(3000);
 		 ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(819, 277))).perform();
 		 dlpo.getChoose_from_library_btn().click();
-	//	 ad.pushFile("/sdcard/Download/images.jpg", new File("D:\\JAVA\\Insta.jpg"));
-		 ad.pullFile("/sdcard/Download/images.jpg");
+//		 ad.pushFile("/sdcard/Download/Demo.jpg", new File("D:\\Extra_Softwares\\Demo.jpg"));
+		 ad.pullFile("/sdcard/Download/Demo.jpg");
 		 Thread.sleep(10000);
 		 dlpo.getImage_under_emulator().click();
 		 Thread.sleep(4000);
