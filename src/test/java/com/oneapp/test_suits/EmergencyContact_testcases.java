@@ -17,7 +17,7 @@ import com.oneapp.page_actions.Selected_Vehicle_Page_Actions;
 
 public class EmergencyContact_testcases extends BrowserFactory {
 
-	@Test (priority = 3, groups = { "smoke" })
+	@Test //(priority = 3, groups = { "smoke" })
 	public void validate_emergency_contact_added_succesfully_testcase() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
@@ -45,7 +45,7 @@ public class EmergencyContact_testcases extends BrowserFactory {
 
 	}
 
-	@Test (priority = 4, groups = { "smoke" })
+	@Test //(priority = 4, groups = { "smoke" })
 	public void validate_emergency_contact_deleted_succesfully_testcase() throws InterruptedException {
 //    		Login_Page_Action lpa= new Login_Page_Action(ad);
 //    		lpa.validate_login();
