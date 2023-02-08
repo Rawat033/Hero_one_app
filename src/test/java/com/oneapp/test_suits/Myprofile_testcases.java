@@ -18,7 +18,7 @@ import com.oneapp.page_actions.Selected_Vehicle_Page_Actions;
 
 public class Myprofile_testcases extends BrowserFactory{
 	
-	@Test (priority = 2, groups = { "smoke" })
+	@Test //(priority = 2, groups = { "smoke" })
 	public void validate_myprofile_valid_details_testcase400() throws InterruptedException {
 		Login_Page_Action lpa = new Login_Page_Action(ad);
 		lpa.validate_login();
