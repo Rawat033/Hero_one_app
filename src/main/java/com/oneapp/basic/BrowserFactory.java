@@ -40,7 +40,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class BrowserFactory {
 
-	public static WebDriver driver;
+//	public static WebDriver driver;
 	public static AndroidDriver ad;// Global AndroidDriver
 	public static ExtentTest extentTest;
 
@@ -63,7 +63,7 @@ public class BrowserFactory {
 	}
 	 
 	 
-		private static String RTDataPortal_Url="https://202.56.244.135/siebel/app/edealer/enu?SWECmd=Start&SWEHo=202.56.244.135"; 
+	/*	private static String RTDataPortal_Url="https://202.56.244.135/siebel/app/edealer/enu?SWECmd=Start&SWEHo=202.56.244.135"; 
 		public static WebDriver launch_Browser(WebDriver driver)
 		{
 		
@@ -74,7 +74,7 @@ public class BrowserFactory {
 			driver.navigate().to(RTDataPortal_Url);
 			
 			return driver;
-		}
+		}*/
 	 
 	 
 
