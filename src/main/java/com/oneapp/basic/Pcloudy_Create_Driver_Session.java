@@ -14,6 +14,7 @@ public class Pcloudy_Create_Driver_Session {
 
 	public static AndroidDriver Androidsession(String Platform_name) throws MalformedURLException {
 		AndroidDriver ad= null;
+
 	
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	capabilities.setCapability("pCloudy_Username", "mobileapp7.support@heromotocorp.com");
@@ -21,17 +22,18 @@ public class Pcloudy_Create_Driver_Session {
 	capabilities.setCapability("pCloudy_DurationInMinutes", 10);
 	capabilities.setCapability("newCommandTimeout", 600);
 	capabilities.setCapability("launchTimeout", 90000);
-	capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel3_Android_12.0.0_a6091");
-	capabilities.setCapability("platformVersion", "12.0.0");
+	capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel2XL_Android_11.0.0_d22ac");
+	capabilities.setCapability("platformVersion", "11.0.0");
 	capabilities.setCapability("platformName", "Android");
 	capabilities.setCapability("automationName", "uiautomator2");
-	capabilities.setCapability("pCloudy_ApplicationName", "app-debug_multiple_view.apk");
+	capabilities.setCapability("pCloudy_ApplicationName", "app-debug.apk");
 	capabilities.setCapability("appPackage", "com.customerapp.hero");
 	capabilities.setCapability("appActivity", "com.customerapp.hero.views.activity.splash.SplashActivity");
 	capabilities.setCapability("pCloudy_WildNet", "false");
 	capabilities.setCapability("pCloudy_EnableVideo", "false");
 	capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
 	capabilities.setCapability("pCloudy_EnableDeviceLogs", "false");
+	
 	
 	capabilities.setCapability("project", "Hero app");
 	capabilities.setCapability("build", "Android latest APK - 9.0.5");

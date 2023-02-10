@@ -1,101 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="26" total="32" passed="6" failed="0" skipped="0">
+<testng-results ignored="31" total="32" passed="0" failed="0" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Android emulator gets opened]]>
-    </line>
-    <line>
-      <![CDATA[Profile Details]]>
-    </line>
-    <line>
-      <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
-    </line>
-    <line>
-      <![CDATA[f30 mumbai bandra east]]>
-    </line>
-    <line>
-      <![CDATA[Female]]>
-    </line>
-    <line>
-      <![CDATA[8130998133]]>
-    </line>
-    <line>
-      <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-02-06T15:48:35 IST" name="LoginSuite" finished-at="2023-02-06T15:54:50 IST" duration-ms="375020">
+  <suite started-at="2023-02-09T13:26:44 IST" name="LoginSuite" finished-at="2023-02-09T13:26:44 IST" duration-ms="43">
     <groups>
       <group name="smoke">
-        <method signature="OTP_testcases.validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@205d38da]" name="validate_OTP_testcase" class="com.oneapp.test_suits.OTP_testcases"/>
-        <method signature="Myprofile_testcases.validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@6950ed69]" name="validate_myprofile_valid_details_testcase400" class="com.oneapp.test_suits.Myprofile_testcases"/>
-        <method signature="EmergencyContact_testcases.validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" name="validate_emergency_contact_added_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
-        <method signature="EmergencyContact_testcases.validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" name="validate_emergency_contact_deleted_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
-        <method signature="ManageLicense_testcases.validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@6f3187b0]" name="validation_manage_licence_testcase" class="com.oneapp.test_suits.ManageLicense_testcases"/>
-        <method signature="GoodLife_testcases.validate_Goodlife_Non_member_asOwner_testcase()[pri:6, instance:com.oneapp.test_suits.GoodLife_testcases@48b67364]" name="validate_Goodlife_Non_member_asOwner_testcase" class="com.oneapp.test_suits.GoodLife_testcases"/>
+        <method signature="OTP_testcases.validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@7ba8c737]" name="validate_OTP_testcase" class="com.oneapp.test_suits.OTP_testcases"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-02-06T15:48:35 IST" name="LoginTest" finished-at="2023-02-06T15:54:50 IST" duration-ms="375020">
-      <class name="com.oneapp.test_suits.GoodLife_testcases">
-        <test-method signature="validate_Goodlife_Non_member_asOwner_testcase()[pri:6, instance:com.oneapp.test_suits.GoodLife_testcases@48b67364]" started-at="2023-02-06T15:54:13 IST" name="validate_Goodlife_Non_member_asOwner_testcase" finished-at="2023-02-06T15:54:50 IST" duration-ms="36772" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_Goodlife_Non_member_asOwner_testcase -->
-      </class> <!-- com.oneapp.test_suits.GoodLife_testcases -->
-      <class name="com.oneapp.test_suits.EmergencyContact_testcases">
-        <test-method signature="validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" started-at="2023-02-06T15:52:10 IST" name="validate_emergency_contact_added_succesfully_testcase" finished-at="2023-02-06T15:53:28 IST" duration-ms="77738" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[8130998133]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validate_emergency_contact_added_succesfully_testcase -->
-        <test-method signature="validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@6dd7b5a3]" started-at="2023-02-06T15:53:28 IST" name="validate_emergency_contact_deleted_succesfully_testcase" finished-at="2023-02-06T15:53:34 IST" duration-ms="6130" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validate_emergency_contact_deleted_succesfully_testcase -->
-      </class> <!-- com.oneapp.test_suits.EmergencyContact_testcases -->
+    <test started-at="2023-02-09T13:26:44 IST" name="LoginTest" finished-at="2023-02-09T13:26:44 IST" duration-ms="43">
       <class name="com.oneapp.test_suits.OTP_testcases">
-        <test-method signature="validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@205d38da]" started-at="2023-02-06T15:48:35 IST" name="validate_OTP_testcase" finished-at="2023-02-06T15:49:57 IST" duration-ms="81901" status="PASS">
+        <test-method signature="validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@7ba8c737]" started-at="2023-02-09T13:26:44 IST" name="validate_OTP_testcase" finished-at="2023-02-09T13:26:44 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: com.ssts.pcloudy.exceptions.DeviceNotBookedException : Requested Device Full 'GOOGLE_Pixel2XL_Android_11.0.0_d22ac' name not found/already booked. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.67 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: com.ssts.pcloudy.exceptions.DeviceNotBookedException : Requested Device Full 'GOOGLE_Pixel2XL_Android_11.0.0_d22ac' name not found/already booked. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.67 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:97)
+at com.oneapp.basic.Pcloudy_Create_Driver_Session.Androidsession(Pcloudy_Create_Driver_Session.java:48)
+at com.oneapp.basic.BrowserFactory.Browsers_open(BrowserFactory.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+... 38 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: com.ssts.pcloudy.exceptions.DeviceNotBookedException : Requested Device Full 'GOOGLE_Pixel2XL_Android_11.0.0_d22ac' name not found/already booked. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.67 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_OTP_testcase -->
       </class> <!-- com.oneapp.test_suits.OTP_testcases -->
-      <class name="com.oneapp.test_suits.Myprofile_testcases">
-        <test-method signature="validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@6950ed69]" started-at="2023-02-06T15:49:57 IST" name="validate_myprofile_valid_details_testcase400" finished-at="2023-02-06T15:52:10 IST" duration-ms="133457" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Profile Details]]>
-            </line>
-            <line>
-              <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
-            </line>
-            <line>
-              <![CDATA[f30 mumbai bandra east]]>
-            </line>
-            <line>
-              <![CDATA[Female]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validate_myprofile_valid_details_testcase400 -->
-      </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
       <class name="com.oneapp.test_suits.Login_testcases">
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Login_testcases@7ba8c737]" started-at="2023-02-06T15:48:14 IST" name="Browsers_open" finished-at="2023-02-06T15:48:35 IST" duration-ms="21007" status="PASS">
+        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Login_testcases@4bbf6d0e]" started-at="2023-02-09T13:26:31 IST" name="Browsers_open" finished-at="2023-02-09T13:26:44 IST" duration-ms="12365" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: com.ssts.pcloudy.exceptions.DeviceNotBookedException : Requested Device Full 'GOOGLE_Pixel2XL_Android_11.0.0_d22ac' name not found/already booked. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.67 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: com.ssts.pcloudy.exceptions.DeviceNotBookedException : Requested Device Full 'GOOGLE_Pixel2XL_Android_11.0.0_d22ac' name not found/already booked. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.67 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:216)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:99)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:97)
+at com.oneapp.basic.Pcloudy_Create_Driver_Session.Androidsession(Pcloudy_Create_Driver_Session.java:48)
+at com.oneapp.basic.BrowserFactory.Browsers_open(BrowserFactory.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+... 38 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: com.ssts.pcloudy.exceptions.DeviceNotBookedException : Requested Device Full 'GOOGLE_Pixel2XL_Android_11.0.0_d22ac' name not found/already booked. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11.67 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: AndroidDriver
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
-            <line>
-              <![CDATA[Android emulator gets opened]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Browsers_open -->
       </class> <!-- com.oneapp.test_suits.Login_testcases -->
-      <class name="com.oneapp.test_suits.ManageLicense_testcases">
-        <test-method signature="validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@6f3187b0]" started-at="2023-02-06T15:53:34 IST" name="validation_manage_licence_testcase" finished-at="2023-02-06T15:54:13 IST" duration-ms="38907" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validation_manage_licence_testcase -->
-      </class> <!-- com.oneapp.test_suits.ManageLicense_testcases -->
     </test> <!-- LoginTest -->
   </suite> <!-- LoginSuite -->
 </testng-results>

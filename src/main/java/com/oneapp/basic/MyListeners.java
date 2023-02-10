@@ -33,8 +33,10 @@ public class MyListeners extends BrowserFactory implements ITestListener {
 	
 
 		public void onTestStart(ITestResult result) {
-			ExtentTest test = extent.createTest(result.getTestClass().getName() + " :: " + 
-		result.getMethod().getMethodName());
+//			ExtentTest test = extent.createTest(result.getTestClass().getName() + " :: " + 
+//		result.getMethod().getMethodName());
+			
+			ExtentTest test = extent.createTest(result.getMethod().getMethodName());
 			extent_test.set(test);
 		}
 	
