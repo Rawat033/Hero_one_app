@@ -14,7 +14,7 @@ public class Pcloudy_Create_Driver_Session {
 
 	public static AndroidDriver Androidsession(String Platform_name) throws MalformedURLException {
 		AndroidDriver ad= null;
-
+	
 	
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	capabilities.setCapability("pCloudy_Username", "mobileapp7.support@heromotocorp.com");
@@ -22,9 +22,9 @@ public class Pcloudy_Create_Driver_Session {
 	capabilities.setCapability("pCloudy_DurationInMinutes", 10);
 	capabilities.setCapability("newCommandTimeout", 600);
 	capabilities.setCapability("launchTimeout", 90000);
-	capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel2XL_Android_11.0.0_d22ac");
-	capabilities.setCapability("platformVersion", "11.0.0");
-	capabilities.setCapability("platformName", "Android");
+	capabilities.setCapability("pCloudy_DeviceFullName", "SAMSUNG_GalaxyNote20_Android_12.0.0_dd2e9");
+	capabilities.setCapability("platformVersion", "12.0.0");
+	capabilities.setCapability("platformName", Platform_name);
 	capabilities.setCapability("automationName", "uiautomator2");
 	capabilities.setCapability("pCloudy_ApplicationName", "app-debug.apk");
 	capabilities.setCapability("appPackage", "com.customerapp.hero");
@@ -33,6 +33,7 @@ public class Pcloudy_Create_Driver_Session {
 	capabilities.setCapability("pCloudy_EnableVideo", "false");
 	capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
 	capabilities.setCapability("pCloudy_EnableDeviceLogs", "false");
+	
 	
 	
 	capabilities.setCapability("project", "Hero app");

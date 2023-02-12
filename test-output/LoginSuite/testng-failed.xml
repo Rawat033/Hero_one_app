@@ -11,12 +11,37 @@
       </run>
     </groups>
     <classes>
+      <class name="com.oneapp.test_suits.Myprofile_testcases">
+        <methods>
+          <include name="Browsers_open"/>
+          <include name="validate_myprofile_valid_details_testcase400"/>
+        </methods>
+      </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
+      <class name="com.oneapp.test_suits.OTP_testcases">
+        <methods>
+          <include name="Browsers_open"/>
+          <include name="validate_OTP_testcase"/>
+        </methods>
+      </class> <!-- com.oneapp.test_suits.OTP_testcases -->
+      <class name="com.oneapp.test_suits.EmergencyContact_testcases">
+        <methods>
+          <include name="validate_emergency_contact_deleted_succesfully_testcase"/>
+          <include name="validate_emergency_contact_added_succesfully_testcase"/>
+          <include name="Browsers_open"/>
+        </methods>
+      </class> <!-- com.oneapp.test_suits.EmergencyContact_testcases -->
       <class name="com.oneapp.test_suits.ManageLicense_testcases">
         <methods>
           <include name="Browsers_open"/>
           <include name="validation_manage_licence_testcase"/>
         </methods>
       </class> <!-- com.oneapp.test_suits.ManageLicense_testcases -->
+      <class name="com.oneapp.test_suits.SOS_testcases">
+        <methods>
+          <include name="Browsers_open"/>
+          <include name="validate_SOS_message_sending_testcase"/>
+        </methods>
+      </class> <!-- com.oneapp.test_suits.SOS_testcases -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [LoginSuite] -->

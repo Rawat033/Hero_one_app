@@ -47,6 +47,11 @@ public class Generic extends BrowserFactory {
 	}
 
 	public static void sendkeys_element(WebElement element, String text) {
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		element.sendKeys(text);
 	}
 
