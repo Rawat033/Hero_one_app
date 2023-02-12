@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
+import com.oneapp.basic.Generic;
 import com.oneapp.pageobjects.Emergency_contact_details_page_object;
 import com.oneapp.pageobjects.Emerygency_contacts_page_objects;
 
@@ -18,17 +19,23 @@ public class Emergency_contact_details_page_actions {
 		ecdpo = new Emergency_contact_details_page_object(ad);
 	}
 
-	public void filling_emergency_contact_details() throws InterruptedException {
-		ecdpo.getFullname_textbox().sendKeys("Me");
-		ecdpo.getMob_number_txtbox().sendKeys("8130998133");
+	public void filling_emergency_contact_details() {
+		Generic.sendkeys_element(ecdpo.getFullname_textbox(), "Me");
+		Generic.sendkeys_element(ecdpo.getMob_number_txtbox(), "8130998133");
 		ecdpo.getRelation_type().click();
-		Thread.sleep(4000);		
+		try {
+			Thread.sleep(4000);
+		} catch (Exception e) {
+		}		
 		List<WebElement> options = ecdpo.getRelation_typedropdown();
 		
 		for (WebElement element : options) {
 			String val = element.getText();
 			if (val.equalsIgnoreCase("friend")) {
-				Thread.sleep(3000);
+				try {
+					Thread.sleep(3000);
+				} catch (Exception e) {
+				}
 				element.click();
 				break;
 			}
@@ -50,7 +57,6 @@ public class Emergency_contact_details_page_actions {
 //		 }
 	
 
-		Thread.sleep(3000);
 		
 		ecdpo.getContinue_btn().click();
 

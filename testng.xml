@@ -5,19 +5,18 @@
 		<listener class-name="com.oneapp.basic.MyListeners" />
 	</listeners>
 	<test thread-count="5" name="LoginTest">
-
 		<groups>
 			<run>
-				<include name="smoke"/>
+				<include name="smoke" />
 			</run>
 		</groups>
-		
 		<classes>
 			<class name="com.oneapp.test_suits.Login_testcases"></class>
 			<class name="com.oneapp.test_suits.OTP_testcases"></class>
 			<class name="com.oneapp.test_suits.Myprofile_testcases"></class>
 			<class name="com.oneapp.test_suits.EmergencyContact_testcases"></class>
 			<class name="com.oneapp.test_suits.ManageLicense_testcases"></class>
+			<class name="com.oneapp.test_suits.SOS_testcases"></class>
 			<class name="com.oneapp.test_suits.BookService_testcases"></class>
 			<class name="com.oneapp.test_suits.GoodLife_testcases"></class>
 		</classes>

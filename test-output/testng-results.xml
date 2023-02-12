@@ -1,88 +1,467 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="27" total="33" passed="6" failed="0" skipped="0">
+<testng-results ignored="28" total="34" passed="0" failed="6" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Android emulator gets opened]]>
     </line>
-    <line>
-      <![CDATA[Profile Details]]>
-    </line>
-    <line>
-      <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
-    </line>
-    <line>
-      <![CDATA[f30 mumbai bandra east]]>
-    </line>
-    <line>
-      <![CDATA[Female]]>
-    </line>
-    <line>
-      <![CDATA[8130998133]]>
-    </line>
-    <line>
-      <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-02-06T12:55:41 IST" name="LoginSuite" finished-at="2023-02-06T13:02:06 IST" duration-ms="385189">
+  <suite started-at="2023-02-12T11:41:19 IST" name="LoginSuite" finished-at="2023-02-12T11:41:56 IST" duration-ms="36468">
     <groups>
       <group name="smoke">
-        <method signature="EmergencyContact_testcases.validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@420a85c4]" name="validate_emergency_contact_added_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
-        <method signature="EmergencyContact_testcases.validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@420a85c4]" name="validate_emergency_contact_deleted_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
-        <method signature="GoodLife_testcases.validate_Goodlife_Non_member_asOwner_testcase()[pri:6, instance:com.oneapp.test_suits.GoodLife_testcases@1c852c0f]" name="validate_Goodlife_Non_member_asOwner_testcase" class="com.oneapp.test_suits.GoodLife_testcases"/>
-        <method signature="ManageLicense_testcases.validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@1c39680d]" name="validation_manage_licence_testcase" class="com.oneapp.test_suits.ManageLicense_testcases"/>
-        <method signature="Myprofile_testcases.validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@4bf48f6]" name="validate_myprofile_valid_details_testcase400" class="com.oneapp.test_suits.Myprofile_testcases"/>
-        <method signature="OTP_testcases.validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@2fba3fc4]" name="validate_OTP_testcase" class="com.oneapp.test_suits.OTP_testcases"/>
+        <method signature="EmergencyContact_testcases.validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@3116c353]" name="validate_emergency_contact_added_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
+        <method signature="EmergencyContact_testcases.validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@3116c353]" name="validate_emergency_contact_deleted_succesfully_testcase" class="com.oneapp.test_suits.EmergencyContact_testcases"/>
+        <method signature="ManageLicense_testcases.validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@f627d13]" name="validation_manage_licence_testcase" class="com.oneapp.test_suits.ManageLicense_testcases"/>
+        <method signature="Myprofile_testcases.validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@6ea2bc93]" name="validate_myprofile_valid_details_testcase400" class="com.oneapp.test_suits.Myprofile_testcases"/>
+        <method signature="OTP_testcases.validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@4fa1c212]" name="validate_OTP_testcase" class="com.oneapp.test_suits.OTP_testcases"/>
+        <method signature="SOS_testcases.validate_SOS_message_sending_testcase()[pri:6, instance:com.oneapp.test_suits.SOS_testcases@4e928fbf]" name="validate_SOS_message_sending_testcase" class="com.oneapp.test_suits.SOS_testcases"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-02-06T12:55:41 IST" name="LoginTest" finished-at="2023-02-06T13:02:06 IST" duration-ms="385189">
-      <class name="com.oneapp.test_suits.GoodLife_testcases">
-        <test-method signature="validate_Goodlife_Non_member_asOwner_testcase()[pri:6, instance:com.oneapp.test_suits.GoodLife_testcases@1c852c0f]" started-at="2023-02-06T13:01:30 IST" name="validate_Goodlife_Non_member_asOwner_testcase" finished-at="2023-02-06T13:02:06 IST" duration-ms="36239" status="PASS">
+    <test started-at="2023-02-12T11:41:19 IST" name="LoginTest" finished-at="2023-02-12T11:41:56 IST" duration-ms="36468">
+      <class name="com.oneapp.test_suits.SOS_testcases">
+        <test-method signature="validate_SOS_message_sending_testcase()[pri:6, instance:com.oneapp.test_suits.SOS_testcases@4e928fbf]" started-at="2023-02-12T11:41:54 IST" name="validate_SOS_message_sending_testcase" finished-at="2023-02-12T11:41:54 IST" duration-ms="202" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/ic_sos}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/ic_sos}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.oneapp.page_actions.SOS_page_actions.tapping_on_SOS_icon(SOS_page_actions.java:21)
+at com.oneapp.test_suits.SOS_testcases.validate_SOS_message_sending_testcase(SOS_testcases.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_Goodlife_Non_member_asOwner_testcase -->
-      </class> <!-- com.oneapp.test_suits.GoodLife_testcases -->
+        </test-method> <!-- validate_SOS_message_sending_testcase -->
+      </class> <!-- com.oneapp.test_suits.SOS_testcases -->
       <class name="com.oneapp.test_suits.EmergencyContact_testcases">
-        <test-method signature="validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@420a85c4]" started-at="2023-02-06T12:59:23 IST" name="validate_emergency_contact_added_succesfully_testcase" finished-at="2023-02-06T13:00:44 IST" duration-ms="80697" status="PASS">
+        <test-method signature="validate_emergency_contact_added_succesfully_testcase()[pri:3, instance:com.oneapp.test_suits.EmergencyContact_testcases@3116c353]" started-at="2023-02-12T11:41:51 IST" name="validate_emergency_contact_added_succesfully_testcase" finished-at="2023-02-12T11:41:51 IST" duration-ms="242" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/lbl1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/lbl1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.oneapp.page_actions.Login_Page_Action.validate_login(Login_Page_Action.java:93)
+at com.oneapp.test_suits.EmergencyContact_testcases.validate_emergency_contact_added_succesfully_testcase(EmergencyContact_testcases.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[8130998133]]>
-            </line>
           </reporter-output>
         </test-method> <!-- validate_emergency_contact_added_succesfully_testcase -->
-        <test-method signature="validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@420a85c4]" started-at="2023-02-06T13:00:44 IST" name="validate_emergency_contact_deleted_succesfully_testcase" finished-at="2023-02-06T13:00:50 IST" duration-ms="6169" status="PASS">
+        <test-method signature="validate_emergency_contact_deleted_succesfully_testcase()[pri:4, instance:com.oneapp.test_suits.EmergencyContact_testcases@3116c353]" started-at="2023-02-12T11:41:52 IST" name="validate_emergency_contact_deleted_succesfully_testcase" finished-at="2023-02-12T11:41:52 IST" duration-ms="207" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/ivAction}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/ivAction}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.oneapp.page_actions.Emergency_contact_page_actions.Deleting_contact(Emergency_contact_page_actions.java:55)
+at com.oneapp.test_suits.EmergencyContact_testcases.validate_emergency_contact_deleted_succesfully_testcase(EmergencyContact_testcases.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Contact deleted succesfully and now displaying Add Emergency contact]]>
-            </line>
           </reporter-output>
         </test-method> <!-- validate_emergency_contact_deleted_succesfully_testcase -->
       </class> <!-- com.oneapp.test_suits.EmergencyContact_testcases -->
       <class name="com.oneapp.test_suits.OTP_testcases">
-        <test-method signature="validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@2fba3fc4]" started-at="2023-02-06T12:55:41 IST" name="validate_OTP_testcase" finished-at="2023-02-06T12:57:03 IST" duration-ms="81801" status="PASS">
+        <test-method signature="validate_OTP_testcase()[pri:1, instance:com.oneapp.test_suits.OTP_testcases@4fa1c212]" started-at="2023-02-12T11:41:19 IST" name="validate_OTP_testcase" finished-at="2023-02-12T11:41:48 IST" duration-ms="29259" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=xpath, value=//*[@text='Goodlife nonmem']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=xpath, value=//*[@text='Goodlife nonmem']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.oneapp.page_actions.Selected_Vehicle_Page_Actions.Assertion_selected_vehicle_page(Selected_Vehicle_Page_Actions.java:33)
+at com.oneapp.test_suits.OTP_testcases.validate_OTP_testcase(OTP_testcases.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_OTP_testcase -->
       </class> <!-- com.oneapp.test_suits.OTP_testcases -->
       <class name="com.oneapp.test_suits.Myprofile_testcases">
-        <test-method signature="validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@4bf48f6]" started-at="2023-02-06T12:57:03 IST" name="validate_myprofile_valid_details_testcase400" finished-at="2023-02-06T12:59:23 IST" duration-ms="140495" status="PASS">
+        <test-method signature="validate_myprofile_valid_details_testcase400()[pri:2, instance:com.oneapp.test_suits.Myprofile_testcases@6ea2bc93]" started-at="2023-02-12T11:41:49 IST" name="validate_myprofile_valid_details_testcase400" finished-at="2023-02-12T11:41:50 IST" duration-ms="300" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/lbl1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/lbl1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at com.oneapp.page_actions.Login_Page_Action.validate_login(Login_Page_Action.java:93)
+at com.oneapp.test_suits.Myprofile_testcases.validate_myprofile_valid_details_testcase400(Myprofile_testcases.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Profile Details]]>
-            </line>
-            <line>
-              <![CDATA[AFTER SAVING MY PROFILE DETAILS]]>
-            </line>
-            <line>
-              <![CDATA[f30 mumbai bandra east]]>
-            </line>
-            <line>
-              <![CDATA[Female]]>
-            </line>
           </reporter-output>
         </test-method> <!-- validate_myprofile_valid_details_testcase400 -->
       </class> <!-- com.oneapp.test_suits.Myprofile_testcases -->
       <class name="com.oneapp.test_suits.Login_testcases">
-        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Login_testcases@20d7d6fb]" started-at="2023-02-06T12:55:20 IST" name="Browsers_open" finished-at="2023-02-06T12:55:41 IST" duration-ms="21353" status="PASS">
+        <test-method is-config="true" signature="Browsers_open()[pri:0, instance:com.oneapp.test_suits.Login_testcases@4ea5b703]" started-at="2023-02-12T11:40:31 IST" name="Browsers_open" finished-at="2023-02-12T11:41:19 IST" duration-ms="47644" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Android emulator gets opened]]>
@@ -91,7 +470,90 @@
         </test-method> <!-- Browsers_open -->
       </class> <!-- com.oneapp.test_suits.Login_testcases -->
       <class name="com.oneapp.test_suits.ManageLicense_testcases">
-        <test-method signature="validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@1c39680d]" started-at="2023-02-06T13:00:50 IST" name="validation_manage_licence_testcase" finished-at="2023-02-06T13:01:30 IST" duration-ms="39646" status="PASS">
+        <test-method signature="validation_manage_licence_testcase()[pri:5, instance:com.oneapp.test_suits.ManageLicense_testcases@f627d13]" started-at="2023-02-12T11:41:53 IST" name="validation_manage_licence_testcase" finished-at="2023-02-12T11:41:53 IST" duration-ms="207" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/manage_license}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A2S9SMV', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, databaseEnabled: false, desired: {app: /opt/raid-data/data/userV2/..., appActivity: com.customerapp.hero.views...., appPackage: com.customerapp.hero, automationName: uiautomator2, build: Android latest APK - 9.0.5, deviceName: 789, launchTimeout: 90000, name: Invalid login, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, platformName: android, platformVersion: 12.0.0, project: Hero app, systemPort: 30064, tag: newtag}, deviceApiLevel: 31, deviceManufacturer: samsung, deviceModel: SM-N980F, deviceName: RZ8N81KBQCP, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8N81KBQCP, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: Invalid login, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: 4mmqmhz7zcctk866c7r6294h, pCloudy_ApplicationName: app-debug.apk, pCloudy_DeviceFullName: SAMSUNG_GalaxyNote20_Androi..., pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: false, pCloudy_EnablePerformanceData: false, pCloudy_EnableVideo: false, pCloudy_Username: mobileapp7.support@heromoto..., pCloudy_WildNet: false, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 12, project: Hero app, statBarHeight: 92, systemPort: 30064, tag: newtag, takesScreenshot: true, viewportRect: {height: 2081, left: 0, top: 92, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bc875a8d-9403-40f9-81d6-caed4436e295
+*** Element info: {Using=id, value=com.customerapp.hero:id/manage_license}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.oneapp.page_actions.Myprofile_Page_Actions.click_manage_licence(Myprofile_Page_Actions.java:70)
+at com.oneapp.test_suits.ManageLicense_testcases.validation_manage_licence_testcase(ManageLicense_testcases.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validation_manage_licence_testcase -->
