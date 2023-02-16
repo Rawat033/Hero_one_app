@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
+import com.oneapp.basic.ExcelData;
 import com.oneapp.basic.Generic;
 import com.oneapp.pageobjects.MyProfile_Page_Object;
 import com.oneapp.pageobjects.Personal_Details_Page_Object;
@@ -22,12 +23,14 @@ import io.appium.java_client.touch.offset.PointOption;
 public class Personal_Details_Page_Actions {
 
 	public AndroidDriver ad;
+	public ExcelData exceldata;
 	public Personal_Details_Page_Object pdpo;
 	public TouchAction ta;
 
 	public Personal_Details_Page_Actions(AndroidDriver ad) {
 		this.ad = ad;
 		pdpo = new Personal_Details_Page_Object(ad);
+		exceldata = new ExcelData();
 	}
 
 	public void fullName_field() throws InterruptedException {
@@ -37,7 +40,7 @@ public class Personal_Details_Page_Actions {
 	}
 
 	public void EnterfullName() {
-		Generic.sendkeys_element(pdpo.getFullname_textfield(), "Gunjan Rawat");
+		Generic.sendkeys_element(pdpo.getFullname_textfield(), exceldata.getStringData("My Profile", 0, 1));
 	}
 
 	public void Gender_radio_button() throws InterruptedException {
@@ -67,8 +70,11 @@ public class Personal_Details_Page_Actions {
 
 	public void enter_email() throws InterruptedException {
 		Random randomGenerator = new Random();
-		int randomInt = randomGenerator.nextInt(10000);
-		pdpo.getEmailfield().sendKeys("gunjanrawat" + randomInt + "@gmail.com");
+		int randomInt = randomGenerator.nextInt(100000);
+		String email = exceldata.getStringData("My Profile", 1, 1);
+		String front_email = email.substring(0,6);
+		String end_email = email.substring(9,19);
+		pdpo.getEmailfield().sendKeys(front_email + randomInt + end_email);
 
 		System.out.println("*************************************");
 		Generic.swiping(534, 1349, 538, 792, 4000);
@@ -81,7 +87,7 @@ public class Personal_Details_Page_Actions {
 
 	public void enter_invalid_email() {
 		
-		Generic.sendkeys_element(pdpo.getEmailfield(), "abncasdasd");
+		Generic.sendkeys_element(pdpo.getEmailfield(), exceldata.getStringData("My Profile", 8, 1));
 		
 	}
 
@@ -92,7 +98,7 @@ public class Personal_Details_Page_Actions {
 		 ta.tap(TapOptions.tapOptions().withPosition(PointOption.point(815,1319))).perform();
 		 Thread.sleep(3000);
 		pdpo.getEdit_under_date_field().click();
-		Generic.sendkeys_element(pdpo.getEditing_date(), "1/2/01");
+		Generic.sendkeys_element(pdpo.getEditing_date(),"1/2/02");
 		pdpo.getOk_text().click();
 		Thread.sleep(3000);
 	}
@@ -114,11 +120,11 @@ public class Personal_Details_Page_Actions {
 	}
 
 	public void enter_address() {
-		Generic.sendkeys_element(pdpo.getAddress_field(), "f30, mumbai, bandra east");
+		Generic.sendkeys_element(pdpo.getAddress_field(), exceldata.getStringData("My Profile", 3, 1));
 	}
 
 	public void enter_invalid_address() {
-		Generic.sendkeys_element(pdpo.getAddress_field(), "f30, mumbai, bandra east +++++++@#%^^&%^*!@#$@#$%^*^(");
+		Generic.sendkeys_element(pdpo.getAddress_field(), exceldata.getStringData("My Profile", 10, 1));
 	}
 
 	public void Pincode_field() throws InterruptedException {
@@ -131,13 +137,13 @@ public class Personal_Details_Page_Actions {
 	}
 
 	public void enter_pincode() throws InterruptedException {
-		Generic.sendkeys_element(pdpo.getPincode_field(), "110091");
+		Generic.sendkeys_element(pdpo.getPincode_field(), exceldata.getStringData("My Profile", 4, 1));
 	
 	}
 
 	public void enter_invalid_pincode() throws InterruptedException {
 		
-		Generic.sendkeys_element(pdpo.getPincode_field(), "000000");
+		Generic.sendkeys_element(pdpo.getPincode_field(), exceldata.getStringData("My Profile", 11, 1));
 		
 	}
 

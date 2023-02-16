@@ -23,6 +23,7 @@ public class Generic extends BrowserFactory {
 
 	public static WebDriver driver;
 	public static TouchAction ta;
+	
 
 	public static void WifiOff() {
 		ConnectionState state = ad.setConnection(new ConnectionStateBuilder().withWiFiDisabled().build());

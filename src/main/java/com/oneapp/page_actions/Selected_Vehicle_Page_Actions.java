@@ -30,8 +30,8 @@ public class Selected_Vehicle_Page_Actions {
 
 	public void Assertion_selected_vehicle_page()
 	{
-		String expected = svpo.getGoodlife_vin().getText();
-		String actual = "Goodlife nonmem";
+		String expected = svpo.getBook_service_vin().getText();
+		String actual = "Book service FSC";
 		Assert.assertEquals(actual, expected);
 	}
 	public void Vehicle_Select() throws InterruptedException {

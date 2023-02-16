@@ -36,6 +36,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
 public class BrowserFactory {
@@ -53,10 +54,10 @@ public class BrowserFactory {
 		// This is origional
 		ad = Create_Driver_Session.Androidsession("Android");
 		Reporter.log("Android emulator gets opened", true);
-//		
+		
 		// For Pcloudy
 
-//            	ad = Pcloudy_Create_Driver_Session.Androidsession("Android");
+//            	ad = Pcloudy_Create_Driver_Session.creating_session("ios");
 //            	Reporter.log("Android emulator gets opened", true);
 
 	}

@@ -97,7 +97,7 @@ public class Login_Page_Action {
 		System.out.println(lpo.getHerologo().getText());
 		WebElement mob_num = lpo.getMobile_num_field();
 		mob_num.clear();
-		mob_num.sendKeys(exceldata.getStringData("Login Page", 0, 0));
+		mob_num.sendKeys(exceldata.getStringData("Login Page", 0, 1));
 		lpo.getlogin_btn().click();
 		// ad.findElementByXPath("//*[@text='Continue']").click();
 		Thread.sleep(5000);
@@ -112,7 +112,7 @@ public class Login_Page_Action {
 		Assert.assertEquals(hlogo.getText(), Expectedlogo);
 
 		StringBuilder sb = new StringBuilder();
-		StringBuilder rev = sb.append(exceldata.getStringData("Login Page", 0, 0));
+		StringBuilder rev = sb.append(exceldata.getStringData("Login Page", 1, 1));
 		StringBuilder reverse = rev.reverse();
 		lpo.getMobile_num_field().sendKeys(reverse);
 		Thread.sleep(10000);
@@ -129,7 +129,7 @@ public class Login_Page_Action {
 
 		WebElement Enter_mob_num = lpo.getMobile_num_field();
 
-		Enter_mob_num.sendKeys(exceldata.getStringData("Login Page", 2, 0));
+		Enter_mob_num.sendKeys(exceldata.getStringData("Login Page", 2, 1));
 
 		
 		if (exceldata.getStringData("Login Page", 2, 0).contains("9958")) {

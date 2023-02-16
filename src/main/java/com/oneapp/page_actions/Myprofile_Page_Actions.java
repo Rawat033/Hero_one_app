@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
+import com.oneapp.basic.ExcelData;
 import com.oneapp.pageobjects.Menu_Bar_Page_Object;
 import com.oneapp.pageobjects.MyProfile_Page_Object;
 
@@ -13,10 +14,12 @@ public class Myprofile_Page_Actions {
 
 	public AndroidDriver ad;
 	public MyProfile_Page_Object mppo;
+	public ExcelData exceldata;
 
 	public Myprofile_Page_Actions(AndroidDriver ad) {
 		this.ad = ad;
 		mppo = new MyProfile_Page_Object(ad);
+		exceldata = new ExcelData();
 	}
 
 	public void Profiledetails_val() throws InterruptedException {
@@ -40,7 +43,7 @@ public class Myprofile_Page_Actions {
 	{
 		mppo.getMoredetails_link().click();
 		
-		String expected_address = "f30 mumbai bandra east";
+		String expected_address = exceldata.getStringData("My Profile", 3, 1);
 		
 		if (mppo.getAddress_val().getText().equalsIgnoreCase(expected_address)) {
 			Assert.assertEquals(mppo.getAddress_val().getText(), expected_address);
@@ -52,7 +55,7 @@ public class Myprofile_Page_Actions {
 		}
 
 		else {
-			Reporter.log("Adsress field is blank", true);
+			Reporter.log("Address field is blank", true);
 		}
 
 	}

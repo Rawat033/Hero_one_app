@@ -1,6 +1,8 @@
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\Goodlife_Dashboard_Non_mem_Page_Object.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\OTP_Page_Object.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\page_actions\Emergency_contact_page_actions.java
+D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\page_actions\SOS_alert_window_page_actions.java
+D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\page_actions\SOS_page_actions.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\page_actions\Booking_confirmed_Page_Action.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\Book_service_selfJobCard_page_object.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\Book_service_service_center_page_object.java
@@ -38,6 +40,8 @@ D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\Goodlife_
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\basic\BrowserFactory.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\basic\Generic.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\basic\Create_Driver_Session.java
+D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\SOS_alert_window_page_object.java
+D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\SOS_page_object.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\page_actions\Book_service_service_center_page_actions.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\pageobjects\Login_Page_Object.java
 D:\JAVA\Eclipse- workspace\oneapp\src\main\java\com\oneapp\page_actions\Vehicle_Service_Page_actions.java

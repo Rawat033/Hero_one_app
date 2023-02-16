@@ -14,7 +14,7 @@ import com.oneapp.page_actions.Selected_Vehicle_Page_Actions;
 
 public class SOS_testcases extends BrowserFactory {
 	
-	@Test(priority = 6, groups = { "smoke" })
+	@Test (priority = 6, groups = { "smoke" })
 	public void validate_SOS_message_sending_testcase() throws InterruptedException {
 		
 		SOS_page_actions SOS_pa= new SOS_page_actions(ad);

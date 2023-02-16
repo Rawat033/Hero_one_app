@@ -15,7 +15,7 @@ import com.oneapp.page_actions.Vehicle_Service_Page_actions;
 
 public class BookService_testcases extends BrowserFactory {
 
-	@Test // (priority = 7, groups = { "smoke" })
+	@Test  (priority = 7, groups = { "smoke" })
 	public void validate_Bookservice_FSC_testcase() throws InterruptedException {
 //		Login_Page_Action lpa = new Login_Page_Action(ad);
 //		lpa.validate_login();
